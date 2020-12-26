@@ -269,16 +269,6 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
-      },
-      "Entity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Entity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entity.dll": {}
-        }
       }
     }
   },
@@ -658,16 +648,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Entity/1.0.0": {
-      "type": "project",
-      "path": "../Entity/Entity.csproj",
-      "msbuildProject": "../Entity/Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Entity >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.10"
     ]
   },
@@ -677,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\3- Data Sınıf Kütüphanesi Eklendi, Data İçinde iki tane repository interface olusturuldu\\RestoranMarket\\RestoranMarket.csproj",
       "projectName": "RestoranMarket",
-      "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\3- Data Sınıf Kütüphanesi Eklendi, Data İçinde iki tane repository interface olusturuldu\\RestoranMarket\\RestoranMarket.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\obj\\",
+      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\3- Data Sınıf Kütüphanesi Eklendi, Data İçinde iki tane repository interface olusturuldu\\RestoranMarket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -697,11 +681,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

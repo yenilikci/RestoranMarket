@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0CqFeZl3a6Y+OzqcsHtg+CB39r0NyBcL+iV0Cg2vILmfS1i8NtbtAZpxwrebgkJqUqFpKUVGrDvYBNwrBDkX6A==",
+  "dgSpecHash": "lXdkPI2iCh+FuVNN+UN+mp2IlQgRfAVHq03kZnp4jOuSjEytwnpQ9BtCCahYqu8i/WPQiHZyTdlRHMw3xvMEew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\3- Data Sınıf Kütüphanesi Eklendi, Data İçinde iki tane repository interface olusturuldu\\RestoranMarket\\RestoranMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.10\\microsoft.aspnetcore.mvc.razor.extensions.3.1.10.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.10\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.10.nupkg.sha512",
