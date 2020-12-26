@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G31a/7tl4LYR6CEDj0Dl1GqzUCrYMP+hBClCKiWxn4GMsSfwno2Hifo9R8HePpE1tZLSZWDSeOySEyG2PTgHyw==",
+  "dgSpecHash": "TK9xSD2GJLyysXrL+tmI2s5ZEDlBmUX79Y6SDaYTy13LQ+3oNw1oVqV7s9+lEHsp8A2+RYuSLLTbxB+40O5DNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\4- Repository Sınıf Kütüphanesi Eklendi, DbContext Oluşturuldu\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

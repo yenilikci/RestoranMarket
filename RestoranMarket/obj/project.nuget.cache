@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KYLDRffsmRt3C7QFjEdpvznhh0ptZchxZa2YTrwBVmpzAZGVqWCQIcbVk6nVpCq3wVIapdWLIMXb+cFhFWYikQ==",
+  "dgSpecHash": "uslimgeZwMqs6qDn0ge3e/ApP6mVJk9fqdLjjPNDLp5fqz/bUDzwgSXNXcE71PtmIRMgkutYXiAWrbYvDce6qQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\4- Repository Sınıf Kütüphanesi Eklendi, DbContext Oluşturuldu\\RestoranMarket\\RestoranMarket.csproj",
+  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.10\\microsoft.aspnetcore.mvc.razor.extensions.3.1.10.nupkg.sha512",
