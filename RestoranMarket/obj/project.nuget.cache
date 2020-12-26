@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uslimgeZwMqs6qDn0ge3e/ApP6mVJk9fqdLjjPNDLp5fqz/bUDzwgSXNXcE71PtmIRMgkutYXiAWrbYvDce6qQ==",
+  "dgSpecHash": "J+1VmAUQENSmsrnsvJi2J+L/DI8+NcSylhst9fXiyAZkUBXH/zKVBzDRoiJp2YzftQxRCwqSbTgEO+GPd78wHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\RestoranMarket\\RestoranMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.10\\microsoft.aspnetcore.mvc.razor.extensions.3.1.10.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.10\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.10.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.10\\microsoft.aspnetcore.razor.language.3.1.10.nupkg.sha512",
@@ -103,6 +105,7 @@
     "C:\\Users\\melih\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\melih\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",

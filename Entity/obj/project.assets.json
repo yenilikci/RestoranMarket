@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",

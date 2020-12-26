@@ -26,7 +26,7 @@ namespace RestoranMarket
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("RestoranMarket")));
             services.AddControllersWithViews();
         }
 
@@ -56,6 +56,8 @@ namespace RestoranMarket
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SeedData.Seed(app);
         }
     }
 }
