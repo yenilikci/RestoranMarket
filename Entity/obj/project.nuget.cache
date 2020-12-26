@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cRNtSUHmO3tFJ3oSHBYReHo/w3aZtb6jXUgVQvLb9BZnK2N+OtBhtYz86RHDede1Gb0NGIhHU/mHKGa21QN5UA==",
+  "dgSpecHash": "G31a/7tl4LYR6CEDj0Dl1GqzUCrYMP+hBClCKiWxn4GMsSfwno2Hifo9R8HePpE1tZLSZWDSeOySEyG2PTgHyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\3- Data Sınıf Kütüphanesi Eklendi, Data İçinde iki tane repository interface olusturuldu\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\4- Repository Sınıf Kütüphanesi Eklendi, DbContext Oluşturuldu\\Entity\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

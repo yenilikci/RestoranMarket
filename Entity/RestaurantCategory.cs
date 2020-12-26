@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entity
 {
-    class RestaurantCategory
+    public class RestaurantCategory
     {
         public int RestaurantId { get; set; }
         public Restaurant Restaurant { get; set; }
