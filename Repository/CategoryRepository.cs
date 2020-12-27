@@ -23,6 +23,17 @@ namespace Repository
             }
         }
 
+
+        public IEnumerable<CategoryModel> GetAllWidthRestaurantCount()
+        {
+            return GetAll().Select(i => new CategoryModel()
+            {
+                CategoryId = i.CategoryId,
+                CategoryName = i.CategoryName,
+                Count = i.RestaurantCategories.Count()
+            });
+        }
+
         public Category CategoryByName(string name)
         {
             return RestaurantContext.Categories.Where(i => i.CategoryName == name).FirstOrDefault();

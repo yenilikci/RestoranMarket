@@ -9,5 +9,7 @@ namespace Data
     {
         //isme göre aratılan kategoriyi getirir
         Category CategoryByName(string name);
+
+        IEnumerable<CategoryModel> GetAllWidthRestaurantCount();
     }
 }

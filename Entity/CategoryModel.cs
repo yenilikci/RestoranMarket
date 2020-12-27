@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Entity
 {
-    public class Category
+    public class CategoryModel
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public List<RestaurantCategory> RestaurantCategories { get; set; }
+        public int Count { get; set; }
     }
 }

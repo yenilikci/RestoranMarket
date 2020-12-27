@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CategoryModel>
+
+
+<div>
+    <ul class="list-group">
+
+        @foreach (var category in Model)
+        {
+            <li class="list-group-item">
+                <a href="#" class="text-danger">@category.CategoryName</a>
+                <span class="pull-right">@category.Count</span>
+            </li>
+        }
+    </ul>
+</div>

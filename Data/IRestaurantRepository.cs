@@ -9,5 +9,7 @@ namespace Data
     {
         //Son eklenen 10 restoranın listesini getirir
         List<Restaurant> Get10TopRestaurants();
+
+
     }
 }

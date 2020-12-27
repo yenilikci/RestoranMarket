@@ -13,6 +13,6 @@ namespace Entity
         public bool IsSlider { get; set; }
         public bool IsFeatured { get; set; }
         
-        public List<Category> Categories { get; set; }
+        public List<RestaurantCategory> RestaurantCategories { get; set; }
     }
 }
