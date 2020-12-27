@@ -24,12 +24,12 @@ namespace Repository
                 {
                     var restaurants = new[]
                     {
-                    new Restaurant() {RestaurantName="Yüzen Hamsi Balık Restoranı"},
-                    new Restaurant() {RestaurantName="Bread Pitt Unlu Mamülleri"},
-                    new Restaurant() {RestaurantName="Kasap Et Derdinde Et Restoranı"},
-                    new Restaurant() {RestaurantName="Yanar Döner Kebab"},
-                    new Restaurant() {RestaurantName="FaceFood Kahvaltı Evi"},
-                    new Restaurant() {RestaurantName="Aralık Sonu Ocakbaşı Çorba"}
+                    new Restaurant() {RestaurantName="Yüzen Hamsi Balık Restoranı",Image="restoran1.jpg"},
+                    new Restaurant() {RestaurantName="Bread Pitt Unlu Mamülleri",Image="restoran2.jpg"},
+                    new Restaurant() {RestaurantName="Kasap Et Derdinde Et Restoranı",Image="restoran3.jpg"},
+                    new Restaurant() {RestaurantName="Yanar Döner Kebab",Image="restoran4.jpg"},
+                    new Restaurant() {RestaurantName="FaceFood Kahvaltı Evi",Image="restoran1.jpg"},
+                    new Restaurant() {RestaurantName="Aralık Sonu Ocakbaşı Çorba",Image="restoran2.jpg"}
                 };
 
                     //restoran isimlerini ekleyelim 
