@@ -1,3 +1,4 @@
+using Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,8 @@ namespace RestoranMarket
         {
 
             services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("RestoranMarket")));
+            services.AddTransient<IRestaurantRepository, RestaurantRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
         }
 

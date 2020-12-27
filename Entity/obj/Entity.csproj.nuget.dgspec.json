@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\Entity.csproj": {}
+    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\Entity.csproj": {
+    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Epqz5da+2DkTom6Ym1H/gW/OecbPRO1oPcVzcNxB4acbt0fvDOkEOa4aRd98zBjpsa9VbTDq6wKWquB+589LA==",
+  "dgSpecHash": "jdFHWw7yzC6ziWiMR1iaqYjnbTrxqk88ujIil9UivlxAS9yTADbNHUyWaw5K7zE7XAmn32WM+6rlIvvVvcylDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\RestoranMarket\\RestoranMarket.csproj",
+  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
