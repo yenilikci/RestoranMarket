@@ -30,6 +30,7 @@ namespace RestoranMarket
             services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("RestoranMarket")));
             services.AddTransient<IRestaurantRepository, RestaurantRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
