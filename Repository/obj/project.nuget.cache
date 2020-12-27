@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i+FB0pdmGPVmlCxVTLf+0HpRs6yOkxxJgDyLkUfQV4XQuw8bq6piwhZpsuIJwElF3Q+lNZXutwCbdhlHZm1FXQ==",
+  "dgSpecHash": "0jXbAdK4gHqiy4vDmtsumIrn91nfMmUTYM/cayU3bsrCgLLZ0MfuNAyYah7Hmw07/f4Vt+Sj0LS+g/VCI+8sDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

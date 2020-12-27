@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Repository
 {
-    class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly DbContext context;
+        protected readonly DbContext context;
 
         public GenericRepository(DbContext _context)
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E8LOjxU+bJ0dCAP3B06sc5l5pu2iJ4/Rv+t5yfVe7RitjagQ97cMwQ2Pnfko30JAvCjO7SkDgxSijvN17gvttA==",
+  "dgSpecHash": "LxKpXPKcqTeGkQkTXquKLNrzwvEV6XKSaUAQR2iVR4Fe0FMyHNgIoU+vd/iKR1t0xlMTlTMFvsKQFe1AklZsZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\8- CategoryRepository ve RestaurantRepository tamamlandı\\Entity\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
