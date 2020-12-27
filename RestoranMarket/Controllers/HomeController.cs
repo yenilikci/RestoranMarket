@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RestoranMarket.Models;
 using System;
@@ -11,27 +12,20 @@ namespace RestoranMarket.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        public IRestaurantRepository restaurant;
+        public IUnitOfWork uow;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IUnitOfWork _uow, IRestaurantRepository _restaurant)
         {
-            _logger = logger;
+            uow = _uow;
+            restaurant = _restaurant;
         }
 
         public IActionResult Index()
         {
-            return View();
+        
+            return View(restaurant.GetAll());
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

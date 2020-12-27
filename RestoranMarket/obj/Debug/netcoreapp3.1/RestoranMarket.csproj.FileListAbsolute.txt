@@ -47,7 +47,6 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.TagHelpers.output.cache
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.RazorCoreGenerate.cache
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
