@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTcsw/MZK5kf6uTCzXv899qNbkI3g6fIPpi9NQs11zSLL/EkEaE8nmPKKtSWX6JUAMTnDHIXQ/Bx1jpENJygDg==",
+  "dgSpecHash": "EHizB0r1/lMpsAEfpywV4YpE1eLGHA3Ij6x0k1AYC3lbxNaZ52Pi6LEKlPHGF/kFOvuFiqwP26DPvsUcjJChmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Data\\Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

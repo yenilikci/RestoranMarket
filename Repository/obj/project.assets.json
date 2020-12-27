@@ -648,11 +648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -669,11 +669,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Data\\Data.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Data\\Data.csproj"
             },
-            "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\6- Migration Yapıldı, Restoran SeedDataları Eklendi\\Entity\\Entity.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\7- IGenericRepository ve GenericRepository oluşturuldu\\Entity\\Entity.csproj"
             }
           }
         }

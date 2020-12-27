@@ -32,7 +32,7 @@ namespace Repository
                     new Restaurant() {RestaurantName="Aralık Sonu Ocakbaşı Çorba"}
                 };
 
-                    //restoran isimlerini ekleyelim
+                    //restoran isimlerini ekleyelim 
                     context.Restaurants.AddRange(restaurants);
 
                     var categories = new[]
