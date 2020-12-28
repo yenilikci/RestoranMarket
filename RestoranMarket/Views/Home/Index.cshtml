@@ -15,22 +15,29 @@
                 </div>
             </div>
             <div class="row">
-                @foreach (var restaurant in Model)
-                {
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="single-location mb-30">
-                            <div class="location-img">
-                                <img src="~/app/thumb/@restaurant.Image" alt="">
-                            </div>
-                            <div class="location-details">
-                                <p>@restaurant.RestaurantName</p>
-                                <br />
-                                <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId" class="location-btn">Restorana Git</a>
-                            </div>
-                        </div>
-                    </div>
-                }
+                <div class="col-lg-8">
 
+                    <div class="row">
+                        @foreach (var restaurant in Model)
+                        {
+                            <div class="col-lg-6">
+                                <div class="single-location mb-30">
+                                    <div class="location-img">
+                                        <img src="~/app/thumb/@restaurant.Image" alt="">
+                                    </div>
+                                    <div class="location-details">
+                                        <p>@restaurant.RestaurantName</p>
+                                        <br />
+                                        <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId" class="location-btn">Restorana Git</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>                 
+                </div>
+                <div class="col-lg-4">
+                    @await Component.InvokeAsync("CategoryMenu")
+                </div>
 
             </div>
         </div>

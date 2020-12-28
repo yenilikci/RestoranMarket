@@ -1,15 +1,19 @@
 ﻿@model IEnumerable<CategoryModel>
+   
 
-
-<div>
-    <ul class="list-group">
-
-        @foreach (var category in Model)
-        {
-            <li class="list-group-item">
-                <a href="#" class="text-danger">@category.CategoryName</a>
-                <span class="pull-right">@category.Count</span>
+ <aside class="single_sidebar_widget post_category_widget">
+        <h2 class="widget_title" style="color: #2d2d2d;">Kategoriler</h2>
+        <br />
+        <ul class="list cat-list">
+            @foreach (var category in Model)
+            {
+            <li>
+                <a href="#" class="d-flex">
+                    <p>@category.CategoryName</p>
+                    <p>(@category.Count)</p>
+                </a>
             </li>
-        }
-    </ul>
-</div>
+            }
+        </ul>
+</aside>
+
