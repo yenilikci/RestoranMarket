@@ -10,7 +10,7 @@ namespace Entity
         public string RestaurantName { get; set; }
         public string Image { get; set; }
         public bool IsHome { get; set; }
-        public bool IsSlider { get; set; }
+        public bool IsApproved { get; set; }
         public bool IsFeatured { get; set; }
         
         public List<RestaurantCategory> RestaurantCategories { get; set; }
