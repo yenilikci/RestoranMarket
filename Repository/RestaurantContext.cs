@@ -16,6 +16,7 @@ namespace Repository
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
