@@ -30,8 +30,8 @@ namespace Repository
                     new Restaurant() {RestaurantName="Yanar Döner Kebab",Image="restoran4.jpg"},
                     new Restaurant() {RestaurantName="FaceFood Kahvaltı Evi",Image="restoran1.jpg"},
                     new Restaurant() {RestaurantName="Aralık Sonu Ocakbaşı Çorba",Image="restoran2.jpg"}
-                };
-
+                    };
+                    
                     //restoran isimlerini ekleyelim 
                     context.Restaurants.AddRange(restaurants);
 
@@ -42,7 +42,7 @@ namespace Repository
                     new Category(){CategoryName="Çorba Restoranı"},
                     new Category(){CategoryName="Kahvaltı Restoranı"},
                     new Category(){CategoryName="Hamurişi Restoranı"}
-                };
+                    };
 
                     //kategori isimlerini ekleyelim
                     context.Categories.AddRange(categories);
@@ -55,9 +55,40 @@ namespace Repository
                     new RestaurantCategory(){Restaurant=restaurants[3],Category=categories[0]},
                     new RestaurantCategory(){Restaurant=restaurants[4],Category=categories[3]},
                     new RestaurantCategory(){Restaurant=restaurants[5],Category=categories[2]},
-                };
+                    };
 
                     context.AddRange(restaurantCategories);
+
+
+                var images = new[]
+                {
+                        new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[0]},
+                        new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[0]},
+                        new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[0]},
+                        new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[0]},
+
+
+                        new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[1]},                       
+                        new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[1]},
+                        new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[1]},
+                        new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[1]},
+
+                        
+                        new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[2]},
+                        new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[2]},
+                        new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[2]},
+                        new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[2]},
+
+                        new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[3]},
+                        new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[3]},
+                        new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[3]},
+                        new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[3]},
+
+                        new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[4]},
+                        new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[4]},
+                        new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[4]},
+                        new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[4]},
+                    };
 
                     //kayıt işlemini tamamlamak için
                     context.SaveChanges();
