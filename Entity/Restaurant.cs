@@ -8,10 +8,16 @@ namespace Entity
     {
         public int RestaurantId { get; set; }
         public string RestaurantName { get; set; }
+        public DateTime DateAdded { get; set; }
         public string Image { get; set; }
+        public string Description { get; set; }
+        public string HtmlContent { get; set; }
         public bool IsHome { get; set; }
         public bool IsApproved { get; set; }
         public bool IsFeatured { get; set; }
-
+        
+        public List<RestaurantCategory> RestaurantCategories { get; set; }
+        public List<Image> Images { get; set; } 
+        public List<RestaurantAttribute> Attributes { get; set; }
     }
 }
