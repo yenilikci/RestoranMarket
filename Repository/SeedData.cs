@@ -60,8 +60,8 @@ namespace Repository
                     context.AddRange(restaurantCategories);
 
 
-                var images = new[]
-                {
+                    var images = new[]
+                    {
                         new Image(){ ImageName="restoran1.jpg",Restaurant=restaurants[0]},
                         new Image(){ ImageName="restoran2.jpg",Restaurant=restaurants[0]},
                         new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[0]},
@@ -89,6 +89,33 @@ namespace Repository
                         new Image(){ ImageName="restoran3.jpg",Restaurant=restaurants[4]},
                         new Image(){ ImageName="restoran4.jpg",Restaurant=restaurants[4]},
                     };
+
+                    context.Images.AddRange(images);
+
+                    var attributes = new []
+                    {
+                        new RestaurantAttribute(){Attribute="Otopark Var Mı?",Value="Evet",Restaurant=restaurants[0]},
+                        new RestaurantAttribute(){Attribute="Açık Alan Var Mı?",Value="Evet",Restaurant=restaurants[0]},
+                        new RestaurantAttribute(){Attribute="Paket Servis Var Mı?",Value="Evet",Restaurant=restaurants[0]},
+
+                        new RestaurantAttribute(){Attribute="Otopark Var Mı?",Value="Hayır",Restaurant=restaurants[1]},
+                        new RestaurantAttribute(){Attribute="Açık Alan Var Mı?",Value="Hayır",Restaurant=restaurants[1]},
+                        new RestaurantAttribute(){Attribute="Paket Servis Var Mı?",Value="Evet",Restaurant=restaurants[1]},
+
+                        new RestaurantAttribute(){Attribute="Otopark Var Mı?",Value="Evet",Restaurant=restaurants[2]},
+                        new RestaurantAttribute(){Attribute="Açık Alan Var Mı?",Value="Hayır",Restaurant=restaurants[2]},
+                        new RestaurantAttribute(){Attribute="Paket Servis Var Mı?",Value="Evet",Restaurant=restaurants[2]},
+
+                        new RestaurantAttribute(){Attribute="Otopark Var Mı?",Value="Evet",Restaurant=restaurants[3]},
+                        new RestaurantAttribute(){Attribute="Açık Alan Var Mı?",Value="Evet",Restaurant=restaurants[3]},
+                        new RestaurantAttribute(){Attribute="Paket Servis Var Mı?",Value="Hayır",Restaurant=restaurants[3]},
+
+                        new RestaurantAttribute(){Attribute="Otopark Var Mı?",Value="Hayır",Restaurant=restaurants[4]},
+                        new RestaurantAttribute(){Attribute="Açık Alan Var Mı?",Value="Hayır",Restaurant=restaurants[4]},
+                        new RestaurantAttribute(){Attribute="Paket Servis Var Mı?",Value="Hayır",Restaurant=restaurants[4]},
+                    };
+
+                    context.RestaurantAttributes.AddRange(attributes);
 
                     //kayıt işlemini tamamlamak için
                     context.SaveChanges();
