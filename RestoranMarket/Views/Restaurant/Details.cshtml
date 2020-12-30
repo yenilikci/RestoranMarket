@@ -1,0 +1,81 @@
+﻿@model RestaurantDetailsModel
+
+<!--? Hero Area Start-->
+<div class="slider-area hero-bg3 hero-overly">
+    <div class="single-slider slider-height2 d-flex align-items-end">
+        <div class="container">
+            <div class="directory-details-head">
+                <section class="wantToWork-area">
+                    <div class="wants-wrapper w-padding3">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-8">
+                                <div class="details-cap d-flex">
+                                    <div class="properties__caption">
+                                        <h3>@Model.Restaurant.RestaurantName</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="double-btn f-right  d-flex flex-wrap">
+                                    <a href="#" class="border-btn w-btn wantToWork-btn mr-20"><i class="fas fa-globe"></i>İnternet Sitesi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Directory Details start -->
+<div class="directory-details mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="small-tittle mb-20">
+                    <h2>Restoran Açıklaması</h2>
+                </div>
+                <div class="directory-cap mb-40">
+                    <p>@Html.Raw(Model.Restaurant.HtmlContent)</p>
+                </div>
+                <div class="small-tittle mb-20">
+                    <h2>Restoran Özellikleri</h2>
+                </div>
+                <div class="directory-cap mb-40">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Özellik</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var restoran in Model.RestaurantAttributes)
+                            {
+                                <tr>
+                                    <td>@restoran.Attribute</td>
+                                    <td>@restoran.Value</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="small-tittle mb-20">
+                    <h2>Restorana Ait Görseller</h2>
+                </div>
+                <div class="gallery-img">
+                    <div class="row">
+                        @foreach (var img in Model.Restaurant.Images)
+                        {
+            <div class="col-lg-6">
+                <img src="~/app/thumb/@img.ImageName" class="mb-30" alt="">
+            </div>}
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
