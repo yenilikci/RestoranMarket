@@ -24,7 +24,7 @@ namespace RestoranMarket.Controllers
         public IActionResult Index()
         {
         
-            return View(restaurant.GetAll());
+            return View(restaurant.GetAll().Where(i => i.IsApproved && i.IsHome));
         }
 
     }

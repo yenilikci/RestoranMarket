@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj": {}
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\RestoranMarket\\RestoranMarket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,11 +140,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj"
               },
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj"
               }
             }
           }
@@ -187,14 +187,14 @@
         }
       }
     },
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\RestoranMarket\\RestoranMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\RestoranMarket\\RestoranMarket.csproj",
         "projectName": "RestoranMarket",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\RestoranMarket\\RestoranMarket.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\RestoranMarket\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\RestoranMarket\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,14 +211,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Data\\Data.csproj"
               },
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Entity\\Entity.csproj"
               },
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj"
               }
             }
           }
@@ -256,6 +256,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             }
           },
           "imports": [

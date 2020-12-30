@@ -12,6 +12,8 @@ namespace RestoranMarket.Controllers
 {
     public class RestaurantController : Controller
     {
+        public int PageSize = 2;
+
         public IRestaurantRepository repository;
 
         public RestaurantController(IRestaurantRepository _repository)
@@ -22,6 +24,23 @@ namespace RestoranMarket.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult List(string category,int page=1)
+        {
+            var restaurants = repository.GetAll();
+
+            if (!string.IsNullOrEmpty(category))
+            {
+                restaurants = restaurants
+                    .Include(i => i.RestaurantCategories)
+                    .ThenInclude(i => i.Category)
+                    .Where(i => i.RestaurantCategories.Any(a => a.Category.CategoryName == category));
+            }
+
+            restaurants = restaurants.Skip((page - 1) * PageSize).Take(PageSize);
+
+            return View(restaurants);
         }
 
         public IActionResult Details(int id)

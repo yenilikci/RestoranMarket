@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ktvdER4DhEzyBlvBM1XzuJIKl7aLIDZlmG049OJY/bttCdL2tAGvH9haQRilVOLWpvFxof9MH2yQvbWlBCaxxA==",
+  "dgSpecHash": "hXmo/otDeG9bXlfttcoQbmT5hjJGebkJh0sHLttBucVrGlUTvaJvPnbhDk3vpzMIfRBXxUC66YTAGXYo2F7I7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\22- RestaurantItem Partial View Yazıldı\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\melih\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

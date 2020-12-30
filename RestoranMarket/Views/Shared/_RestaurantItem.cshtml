@@ -1,0 +1,19 @@
+﻿@model Restaurant
+
+@{
+    Layout = null;
+}
+
+    <div class="col-lg-6">
+        <div class="single-location mb-30">
+            <div class="location-img">
+                <img src="~/app/thumb/@Model.Image" alt="">
+            </div>
+            <div class="location-details">
+                <p>@Model.RestaurantName</p>
+                <br />
+                <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@Model.RestaurantId" class="location-btn">Restorana Git</a>
+            </div>
+        </div>
+    </div>
+

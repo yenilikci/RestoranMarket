@@ -1,51 +1,5 @@
 ﻿@model IEnumerable<Restaurant>
 
-@{
-    ViewData["Title"] = "Anasayfa";
-}
-<div class="slider-area hero-bg1 hero-overly">
-    <div class="single-slider hero-overly  slider-height1 d-flex align-items-center">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10">
-                    <!-- Hero Caption -->
-                    <div class="hero__caption pt-100">
-                        <h1>Restoranları Keşfedin!</h1>
-                        <p>Let's uncover the best places to eat, drink, and shop nearest to you.</p>
-                    </div>
-                    <!--Hero form -->
-                    <form action="#" class="search-box mb-100">
-                        <div class="input-form">
-                            <input type="text" placeholder="What are you finding?">
-                        </div>
-                        <div class="select-form">
-                            <div class="select-itms">
-                                <select name="select" id="select1">
-                                    <option value="">In where?</option>
-                                    <option value="">Catagories One</option>
-                                    <option value="">Catagories Two</option>
-                                    <option value="">Catagories Three</option>
-                                    <option value="">Catagories Four</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="search-form">
-                            <a href="#"><i class="ti-search"></i> Arama Yap</a>
-                        </div>
-                    </form>
-                    <!-- hero category1 img -->
-                    <div class="category-img text-center">
-                        <a href="listing.html"> <img src="~/app/assets/img/gallery/hero_category1.png" alt=""></a>
-                        <a href="listing.html"> <img src="~/app/assets/img/gallery/hero_category2.png" alt=""></a>
-                        <a href="listing.html"> <img src="~/app/assets/img/gallery/hero_category3.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-@await Component.InvokeAsync("FeaturedRestaurant")
 
 <div class="popular-location border-bottom section-padding40">
     <div class="container">
@@ -59,32 +13,24 @@
         </div>
         <div class="row">
             <div class="col-lg-8">
-
+                <div>
+                    @Model.Count() Restoran Bulundu
+                </div>
                 <div class="row">
                     @foreach (var restaurant in Model)
                     {
-                        <div class="col-lg-6">
-                            <div class="single-location mb-30">
-                                <div class="location-img">
-                                    <img src="~/app/thumb/@restaurant.Image" alt="">
-                                </div>
-                                <div class="location-details">
-                                    <p>@restaurant.RestaurantName</p>
-                                    <br />
-                                    <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId" class="location-btn">Restorana Git</a>
-                                </div>
-                            </div>
-                        </div>
+                        @Html.Partial("_RestaurantItem", restaurant)
                     }
                 </div>
             </div>
             <div class="col-lg-4">
                 @await Component.InvokeAsync("CategoryMenu")
             </div>
-
         </div>
     </div>
 </div>
+</div>
+
 <!-- Popular Locations End -->
 <!--? Want To work 01-->
 <section class="wantToWork-area">
