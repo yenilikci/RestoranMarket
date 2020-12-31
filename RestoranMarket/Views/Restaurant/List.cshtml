@@ -1,5 +1,9 @@
-﻿@model IEnumerable<Restaurant>
+﻿@model RestaurantListModel
 
+<div class="slider-area hero-bg3 hero-overly">
+    <div class="single-slider slider-height2 d-flex align-items-end">
+    </div>
+</div>
 
 <div class="popular-location border-bottom section-padding40">
     <div class="container">
@@ -7,17 +11,17 @@
             <div class="col-lg-12">
                 <!-- Section Tittle -->
                 <div class="section-tittle text-center mb-80">
-                    <h2>En iyi restoranları keşfet!</h2>
+                    <h2>En İyi Restoranları Keşfet!</h2>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8">
                 <div>
-                    @Model.Count() Restoran Bulundu
+                    <h2>Toplamda @Model.PagingInfo.TotalItems Restoran Bulundu</h2>
                 </div>
                 <div class="row">
-                    @foreach (var restaurant in Model)
+                    @foreach (var restaurant in Model.Restaurants)
                     {
                         @Html.Partial("_RestaurantItem", restaurant)
                     }
@@ -26,10 +30,11 @@
             <div class="col-lg-4">
                 @await Component.InvokeAsync("CategoryMenu")
             </div>
+            <div class="d-flex justify-content-center ml-3" page-model="@Model.PagingInfo" page-action="List"></div>
         </div>
     </div>
 </div>
-</div>
+
 
 <!-- Popular Locations End -->
 <!--? Want To work 01-->

@@ -10,15 +10,3 @@ C:\Users\melih\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csp
 C:\Users\melih\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
 C:\Users\melih\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\melih\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.pdb
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\bin\Debug\netcoreapp3.1\Data.deps.json
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\bin\Debug\netcoreapp3.1\Data.dll
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\bin\Debug\netcoreapp3.1\Data.pdb
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\bin\Debug\netcoreapp3.1\Entity.dll
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\bin\Debug\netcoreapp3.1\Entity.pdb
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.dll
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Data\obj\Debug\netcoreapp3.1\Data.pdb

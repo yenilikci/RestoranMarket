@@ -7,12 +7,3 @@ C:\Users\melih\source\repos\RestoranMarket\Entity\obj\Debug\netcoreapp3.1\Entity
 C:\Users\melih\source\repos\RestoranMarket\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
 C:\Users\melih\source\repos\RestoranMarket\Entity\obj\Debug\netcoreapp3.1\Entity.dll
 C:\Users\melih\source\repos\RestoranMarket\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\bin\Debug\netcoreapp3.1\Entity.dll
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.dll
-C:\Users\melih\Desktop\RestoranMarket\22- RestaurantItem Partial View Yazıldı\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

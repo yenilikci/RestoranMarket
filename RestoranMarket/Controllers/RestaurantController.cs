@@ -37,10 +37,21 @@ namespace RestoranMarket.Controllers
                     .ThenInclude(i => i.Category)
                     .Where(i => i.RestaurantCategories.Any(a => a.Category.CategoryName == category));
             }
-
+            var count = restaurants.Count();
             restaurants = restaurants.Skip((page - 1) * PageSize).Take(PageSize);
+            return View(
+                new RestaurantListModel()
+                {
+                    Restaurants = restaurants,
+                    PagingInfo = new PagingInfo()
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = PageSize,
+                        TotalItems = count
+                    }
+                }
+                );
 
-            return View(restaurants);
         }
 
         public IActionResult Details(int id)

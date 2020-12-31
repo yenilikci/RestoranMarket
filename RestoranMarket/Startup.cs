@@ -56,15 +56,13 @@ namespace RestoranMarket
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                name: "restaurants",
+                pattern: "restaurants/{category?}",
+                defaults: new { controller = "Restaurant", action = "List" }
+                );
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-
-                endpoints.MapControllerRoute(
-                    name: "restaurants",
-                    pattern: "restaurants /{category ?}",
-                    defaults: new {controller = "Restaurant", action="List"}
-                    );
             });
 
             SeedData.Seed(app);
