@@ -47,8 +47,15 @@ using Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\Views\_ViewImports.cshtml"
+using Microsoft.Extensions.Localization;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"85cc89d1633c36f75123492d607c78b7436c9452", @"/Views/Restaurant/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca06fdced01137b783776ea94a8a30baa1c2c9a3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"45e51a14bf1a97e8f511dda5465e0bd5acddfaa8", @"/Views/_ViewImports.cshtml")]
     public class Views_Restaurant_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<RestaurantListModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-flex justify-content-center ml-3"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -138,7 +145,7 @@ using Data;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n            </div>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85cc89d1633c36f75123492d607c78b7436c94526557", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85cc89d1633c36f75123492d607c78b7436c94526763", async() => {
             }
             );
             __RestoranMarket_Infrastructure_PageLinkTagHelper = CreateTagHelper<global::RestoranMarket.Infrastructure.PageLinkTagHelper>();
@@ -164,6 +171,8 @@ __RestoranMarket_Infrastructure_PageLinkTagHelper.PageModel = Model.PagingInfo;
             WriteLiteral("\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+        public IStringLocalizer<SharedResource> SharedLocalizer { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

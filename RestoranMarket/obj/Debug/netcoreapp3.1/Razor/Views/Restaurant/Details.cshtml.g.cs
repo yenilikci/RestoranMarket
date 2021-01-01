@@ -47,8 +47,15 @@ using Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\Views\_ViewImports.cshtml"
+using Microsoft.Extensions.Localization;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ed3147473bf9dd44f3222d0b77989f94c83a7940", @"/Views/Restaurant/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca06fdced01137b783776ea94a8a30baa1c2c9a3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"45e51a14bf1a97e8f511dda5465e0bd5acddfaa8", @"/Views/_ViewImports.cshtml")]
     public class Views_Restaurant_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<RestaurantDetailsModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("mb-30"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -191,7 +198,7 @@ using Data;
 #line hidden
 #nullable disable
             WriteLiteral("            <div class=\"col-lg-6\">\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ed3147473bf9dd44f3222d0b77989f94c83a79408665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ed3147473bf9dd44f3222d0b77989f94c83a79408871", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -226,6 +233,8 @@ AddHtmlAttributeValue("", 2701, img.ImageName, 2701, 14, false);
             WriteLiteral("\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</div>");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+        public IStringLocalizer<SharedResource> SharedLocalizer { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

@@ -1,6 +1,7 @@
 ﻿using Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RestoranMarket.Models;
 using System;
@@ -14,10 +15,12 @@ namespace RestoranMarket.Controllers
     public class HomeController : Controller
     {
         public IUnitOfWork uow;
+        protected readonly IStringLocalizer<SharedResource> sharedResource;
 
-        public HomeController(IUnitOfWork _uow)
+        public HomeController(IUnitOfWork _uow, IStringLocalizer<SharedResource> _sharedResource)
         {
             uow = _uow;
+            sharedResource = _sharedResource;
         }
 
         public IActionResult Index(string q)

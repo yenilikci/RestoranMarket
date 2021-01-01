@@ -434,3 +434,17 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Restaurant\List.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_RestaurantItem.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\de-DE\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\en-US\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\fr-FR\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\tr-TR\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.SharedResource.resources
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.SharedResource.de-DE.resources
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.SharedResource.en-US.resources
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.SharedResource.fr-FR.resources
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.SharedResource.tr-TR.resources
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.csproj.GenerateResource.cache
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\de-DE\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\en-US\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\fr-FR\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\tr-TR\RestoranMarket.resources.dll

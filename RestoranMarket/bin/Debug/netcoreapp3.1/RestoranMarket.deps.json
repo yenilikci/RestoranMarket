@@ -306,6 +306,20 @@
         "runtime": {
           "RestoranMarket.dll": {}
         },
+        "resources": {
+          "de-DE/RestoranMarket.resources.dll": {
+            "locale": "de-DE"
+          },
+          "en-US/RestoranMarket.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/RestoranMarket.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "tr-TR/RestoranMarket.resources.dll": {
+            "locale": "tr-TR"
+          }
+        },
         "compile": {
           "RestoranMarket.dll": {}
         }

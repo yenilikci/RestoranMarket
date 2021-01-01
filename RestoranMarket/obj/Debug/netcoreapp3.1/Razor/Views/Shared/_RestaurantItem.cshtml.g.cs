@@ -47,8 +47,15 @@ using Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\Views\_ViewImports.cshtml"
+using Microsoft.Extensions.Localization;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"40f194d0d36676a02087bd2b05bbd507d90cd57e", @"/Views/Shared/_RestaurantItem.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca06fdced01137b783776ea94a8a30baa1c2c9a3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"45e51a14bf1a97e8f511dda5465e0bd5acddfaa8", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__RestaurantItem : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Restaurant>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString(""), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -90,7 +97,7 @@ using Data;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n    <div class=\"col-lg-6\">\r\n        <div class=\"single-location mb-30\">\r\n            <div class=\"location-img\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "40f194d0d36676a02087bd2b05bbd507d90cd57e5516", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "40f194d0d36676a02087bd2b05bbd507d90cd57e5722", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -122,7 +129,7 @@ AddHtmlAttributeValue("", 201, Model.Image, 201, 12, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n                <br />\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40f194d0d36676a02087bd2b05bbd507d90cd57e7483", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40f194d0d36676a02087bd2b05bbd507d90cd57e7689", async() => {
                 WriteLiteral("Restorana Git");
             }
             );
@@ -158,6 +165,8 @@ AddHtmlAttributeValue("", 201, Model.Image, 201, 12, false);
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+        public IStringLocalizer<SharedResource> SharedLocalizer { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

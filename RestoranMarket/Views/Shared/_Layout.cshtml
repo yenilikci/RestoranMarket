@@ -53,15 +53,15 @@
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
-                                    <li><a href="/Home/Index#Kategoriler">Kategoriler</a></li>
-                                    <li><a href="#Hakkinda">Restoran Market Hakkında</a></li>
+                                    <li><a asp-controller="Home" asp-action="Index">@SharedLocalizer["Anasayfa"]</a></li>
+                                    <li><a href="/Home/Index#Kategoriler">@SharedLocalizer["Kategori"]</a></li>
+                                    <li><a href="#Hakkinda">@SharedLocalizer["Hakkinda"]</a></li>
                                 </ul>
                             </nav>
                         </div>                    
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                            <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>Kayıt Ol / Giriş Yap</a>
+                            <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>@SharedLocalizer["KayitGiris"]</a>
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
@@ -89,7 +89,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-7 col-lg-9 col-md-8">
                         <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Restoran Market Hakkında</h2>
+                            <h2>@SharedLocalizer["Hakkinda"]</h2>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
                             <span>01</span>
                         </div>
                         <div class="services-cap">
-                            <h5>Keşfet!</h5>
-                            <p>Yerel restoranları keşfetmenize olanak sağlar!</p>
+                            <h5>@SharedLocalizer["Ozellik1Baslik"]</h5>
+                            <p>@SharedLocalizer["Ozellik1Aciklama"]</p>
                         </div>
                     </div>
                 </div>
@@ -118,8 +118,8 @@
                             <span>02</span>
                         </div>
                         <div class="services-cap">
-                            <h5>Özellikleri Tanı!</h5>
-                            <p>Restoran özellikleri hakkında restorana gitmeden detaylı bilgiye sahip ol.</p>
+                            <h5>@SharedLocalizer["Ozellik2Baslik"]</h5>
+                            <p>@SharedLocalizer["Ozellik2Aciklama"]</p>
                         </div>
                     </div>
                 </div>
@@ -129,8 +129,8 @@
                             <span>03</span>
                         </div>
                         <div class="services-cap">
-                            <h5>Rezervasyon Yaptır!</h5>
-                            <p>Restoranlarla iletişime geç ve sana uygun olan restorandan rezervasyonunu yaptır.</p>
+                            <h5>@SharedLocalizer["Ozellik3Baslik"]</h5>
+                            <p>@SharedLocalizer["Ozellik3Aciklama"]</p>
                         </div>
                     </div>
                 </div>

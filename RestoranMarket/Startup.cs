@@ -2,6 +2,8 @@ using Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Repository;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,7 +33,12 @@ namespace RestoranMarket
             services.AddTransient<IRestaurantRepository, RestaurantRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddControllersWithViews();
+
+            services.AddLocalization(options => options.ResourcesPath = "");
+
+            services.AddControllersWithViews()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +54,22 @@ namespace RestoranMarket
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            var supportedCultures = new[]
+            {
+                new CultureInfo("tr-TR"),
+                new CultureInfo("en-US"),
+                new CultureInfo("fr-FR"),
+                new CultureInfo("de-DE"),
+            };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("tr-TR"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

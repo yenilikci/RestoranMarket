@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "Anasayfa";
 }
+
+
+
 <div class="slider-area hero-bg1 hero-overly">
     <div class="single-slider hero-overly  slider-height1 d-flex align-items-center">
         <div class="container">
@@ -10,26 +13,35 @@
                 <div class="col-xl-10 col-lg-10">
                     <!-- Hero Caption -->
                     <div class="hero__caption pt-100">
-                        <h1>Restoranları Keşfedin!</h1>
-                        <p>Seveceğiniz çok fazla seçenek var!</p>
+                        <h1>@SharedLocalizer["Baslik"]</h1>
+                        <p>@SharedLocalizer["AramaAciklama"]</p>
                     </div>
                     <!--Hero form -->
                     <form asp-controller="Home" asp-action="Index" class="d-flex justify-content-center align-items-center search-box mb-100">
                         <div class="input-form mx-5">
-                            <input type="text" id="q" name="q" class="p-5" placeholder="Ne aramıştınız bir restoran veya kategori?">
+                            <input type="text" id="q" name="q" class="p-5" placeholder="@SharedLocalizer["AramaKutusuMetni"]">
                         </div>
                         <div class="search-form mx-5">
-                            <button class="btn p-5">
-                                <i class="ti-search"></i> Arama Yap
+                            <button class="btn">
+                                <i class="ti-search"></i> @SharedLocalizer["Arama"]
                             </button>
                         </div>
+                        <ul class="mt-4">
+                            <span class="text-white">@SharedLocalizer["Diller"]:</span>
+                            <li>
+                                <a asp-controller="Home" asp-action="Index" asp-route-culture="tr-TR" class="btn bg-light text-dark">Türkçe</a>
+                                <a asp-controller="Home" asp-action="Index" asp-route-culture="en-US" class="btn bg-light text-dark">English</a>
+                                <a asp-controller="Home" asp-action="Index" asp-route-culture="de-DE" class="btn bg-light text-dark">German</a>
+                                <a asp-controller="Home" asp-action="Index" asp-route-culture="fr-FR" class="btn bg-light text-dark">French</a>
+                            </li>
+                        </ul>
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 @await Component.InvokeAsync("FeaturedRestaurant")
 
@@ -39,7 +51,7 @@
             <div class="col-lg-12">
                 <!-- Section Tittle -->
                 <div class="section-tittle text-center mb-80">
-                    <h2>En İyi restoranları keşfet!</h2>
+                    <h2>@SharedLocalizer["Kesfet"]</h2>
                 </div>
             </div>
         </div>
@@ -55,15 +67,15 @@
                 @if (TempData["Tümü"] != null)
                 {
                     <div class="alert alert-primary">
-                        <b>@TempData["Tümü"]</b>
+                        <b>@SharedLocalizer["TumRestoranlar"]</b>
                     </div>
                 }
 
                 @if (Model.Count() <= 0)
                 {
-                <div class="alert alert-danger">
-                    <b>@TempData["Aranan"] Sorgusuna Ait Herhangi Bir Sonuç Bulunamadı!</b>
-                </div>
+                    <div class="alert alert-danger">
+                        <b>@TempData["Aranan"] Sorgusuna Ait Herhangi Bir Sonuç Bulunamadı!</b>
+                    </div>
                 }
 
                 <div class="row">
@@ -78,7 +90,7 @@
                                 <div class="location-details">
                                     <p>@restaurant.RestaurantName</p>
                                     <br />
-                                    <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId" class="location-btn">Restorana Git</a>
+                                    <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId" class="location-btn">@SharedLocalizer["@RestoranaGit"]</a>
                                 </div>
                             </div>
                         </div>
