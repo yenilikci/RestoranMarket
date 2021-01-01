@@ -46,7 +46,7 @@
                         <!-- Logo -->
                         <div class="logo">
                             <div class="text-white" style="font-size: 24px;">
-                                Restoran Market
+                                <a asp-controller="Home" asp-action="Index">Restoran Market</a>
                             </div>
                         </div>
                         <!-- Main-menu -->
@@ -54,14 +54,14 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
-                                    <li><a href="listing.html">Kategoriler</a></li>
-                                    <li><a href="listing.html">RestoranMarket Hakkında</a></li>
+                                    <li><a href="/Home/Index#Kategoriler">Kategoriler</a></li>
+                                    <li><a href="#Hakkinda">Restoran Market Hakkında</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div>                    
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                            <a href="#" class="btn"><i class="ti-user"></i>Giriş Yap / Kayıt Ol</a>
+                            <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>Kayıt Ol / Giriş Yap</a>
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
@@ -74,11 +74,72 @@
         <!-- Header End -->
     </header>
     <main>
-     
+
 
         @RenderBody()
 
     </main>
+
+
+    <!-- Popular Locations End -->
+    <!--? Want To work 01-->
+    <section class="wantToWork-area pt-5" id="Hakkinda">
+        <div class="container">
+            <div class="wants-wrapper w-padding2">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-7 col-lg-9 col-md-8">
+                        <div class="wantToWork-caption wantToWork-caption2">
+                            <h2>Restoran Market Hakkında</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Want To work End -->
+    <!--? Our Services Start -->
+    <div class="our-services  border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-ion">
+                            <span>01</span>
+                        </div>
+                        <div class="services-cap">
+                            <h5>Keşfet!</h5>
+                            <p>Yerel restoranları keşfetmenize olanak sağlar!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-ion">
+                            <span>02</span>
+                        </div>
+                        <div class="services-cap">
+                            <h5>Özellikleri Tanı!</h5>
+                            <p>Restoran özellikleri hakkında restorana gitmeden detaylı bilgiye sahip ol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-services mb-30">
+                        <div class="services-ion">
+                            <span>03</span>
+                        </div>
+                        <div class="services-cap">
+                            <h5>Rezervasyon Yaptır!</h5>
+                            <p>Restoranlarla iletişime geç ve sana uygun olan restorandan rezervasyonunu yaptır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <footer>
         <div class="footer-wrapper pt-30">
             <!-- footer-bottom -->
@@ -104,7 +165,6 @@
     </div>
 
     <!-- JS here -->
-
     <!-- Jquery, Popper, Bootstrap -->
     <script src="~/app/assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="~/app/assets/js/popper.min.js"></script>

@@ -19,15 +19,23 @@
                     <div class="properties pb-20">
                         <div class="properties__card">
                             <div class="properties__img overlay1">
-                                <a href="#"><img src="~/app/thumb/@restaurant.Image" alt=""></a>
+                                <a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId"><img src="~/app/thumb/@restaurant.Image" alt=""></a>
                                 <div class="icon">
                                     <img src="~/app/assets/img/gallery/categori_icon1.png" alt="">
                                 </div>
                             </div>
                             <div class="properties__caption">
-                                <h3><a href="#">@restaurant.RestaurantName</a></h3>
-                                <p>Let's uncover the best places to eat, drink</p>
-                            </div>
+                                <h3><a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId">@restaurant.RestaurantName</a></h3>
+                                
+                                @if (restaurant.Description.Length < 100)
+                                    {
+                                    <p>@restaurant.Description</p>
+                                     }
+                                else
+                                    {
+                                    <p>@restaurant.Description.Substring(0, 100)...</p>
+                                    }
+                                </div>
                         </div>
                     </div>
                 }

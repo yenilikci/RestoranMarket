@@ -433,3 +433,4 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Restaurant\Details.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Restaurant\List.cshtml.g.cs
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_RestaurantItem.cshtml.g.cs
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
