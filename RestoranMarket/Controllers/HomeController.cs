@@ -1,5 +1,6 @@
 ﻿using Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RestoranMarket.Models;
 using System;
@@ -12,19 +13,30 @@ namespace RestoranMarket.Controllers
 {
     public class HomeController : Controller
     {
-        public IRestaurantRepository restaurant;
         public IUnitOfWork uow;
 
-        public HomeController(IUnitOfWork _uow, IRestaurantRepository _restaurant)
+        public HomeController(IUnitOfWork _uow)
         {
             uow = _uow;
-            restaurant = _restaurant;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string q)
         {
-        
-            return View(restaurant.GetAll().Where(i => i.IsApproved && i.IsHome));
+            var query = uow.Restaurants.GetAll();
+            query = query.Where(i => i.IsApproved && i.IsHome);
+            if (!string.IsNullOrEmpty(q))
+            {
+                query = query.Include(i => i.RestaurantCategories)
+                .ThenInclude(i => i.Category)
+                .Where(i => i.RestaurantCategories.Any(a => a.Category.CategoryName.Contains(q) || i.RestaurantName.Contains(q)));
+                TempData["Aranan"] = q;
+            }
+            else
+            {
+                TempData["Tümü"] = "Tüm Restoranlar:";
+            }
+
+            return View(query.OrderByDescending(i => i.DateAdded));
         }
 
     }

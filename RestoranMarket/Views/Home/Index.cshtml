@@ -14,12 +14,14 @@
                         <p>Seveceğiniz çok fazla seçenek var!</p>
                     </div>
                     <!--Hero form -->
-                    <form action="#" class="d-flex justify-content-center search-box mb-100">
+                    <form asp-controller="Home" asp-action="Index" class="d-flex justify-content-center align-items-center search-box mb-100">
                         <div class="input-form mx-5">
-                            <input type="text" class="p-5" placeholder="Ne aramıştınız bir restoran veya kategori?">
+                            <input type="text" id="q" name="q" class="p-5" placeholder="Ne aramıştınız bir restoran veya kategori?">
                         </div>
                         <div class="search-form mx-5">
-                            <a href="#" class="px-5"><i class="ti-search"></i> Arama Yap</a>
+                            <button class="btn p-5">
+                                <i class="ti-search"></i> Arama Yap
+                            </button>
                         </div>
                     </form>
 
@@ -44,7 +46,28 @@
         <div class="row">
             <div class="col-lg-8">
 
+                @if (TempData["Aranan"] != null)
+                {
+                    <div class="alert alert-primary">
+                        <b>@TempData["Aranan"]</b> sorgusuna ait sonuçlar:
+                    </div>
+                }
+                @if (TempData["Tümü"] != null)
+                {
+                    <div class="alert alert-primary">
+                        <b>@TempData["Tümü"]</b>
+                    </div>
+                }
+
+                @if (Model.Count() <= 0)
+                {
+                <div class="alert alert-danger">
+                    <b>@TempData["Aranan"] Sorgusuna Ait Herhangi Bir Sonuç Bulunamadı!</b>
+                </div>
+                }
+
                 <div class="row">
+
                     @foreach (var restaurant in Model)
                     {
                         <div class="col-lg-6">
