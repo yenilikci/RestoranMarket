@@ -95,8 +95,6 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -177,8 +175,6 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
-C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
@@ -448,3 +444,11 @@ C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\en-US\RestoranMarket.resources.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\fr-FR\RestoranMarket.resources.dll
 C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\tr-TR\RestoranMarket.resources.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\melih\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
