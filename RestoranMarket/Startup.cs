@@ -35,7 +35,18 @@ namespace RestoranMarket
             services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("RestoranMarket")));
             //identity için
             services.AddDbContext<ApplicationIdentityDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationIdentityDbContext>()
+            services.AddIdentity<ApplicationUser, IdentityRole>(options => {
+                //þifre için gerekli uzunluk
+                options.Password.RequiredLength = 3;
+                //küçük harf zorunluluðu kaldýrýldý
+                options.Password.RequireLowercase = false;
+                //büyük harf zorunluluðu kaldýrýldý
+                options.Password.RequireUppercase = false;
+                //alfanumerik zorunluluðu olmasýn
+                options.Password.RequireNonAlphanumeric = false;
+                //rakam zorunluluðu yok
+                options.Password.RequireDigit = false;
+            }).AddEntityFrameworkStores<ApplicationIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
             //interfaceleri kullanmak için

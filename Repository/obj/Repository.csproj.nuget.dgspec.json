@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {}
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {
+    "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,11 +140,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj"
               },
-              "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
+              "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj"
               }
             }
           }
