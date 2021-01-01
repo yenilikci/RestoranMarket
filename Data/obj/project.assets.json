@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Data\\obj\\",
+      "outputPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket\\29- Şifre Denetimleri Değiştirildi, Startup.cs Düzenlendi\\Entity\\Entity.csproj"
+            "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\melih\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
             }
           }
         }
