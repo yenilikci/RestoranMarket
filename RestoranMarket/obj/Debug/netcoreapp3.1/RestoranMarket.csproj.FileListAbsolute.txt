@@ -222,3 +222,5 @@ C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Res
 C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.Views.pdb
 C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.csproj.CopyComplete
 C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.genruntimeconfig.cache
+C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\AdminRole\Create.cshtml.g.cs
+C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\AdminRole\Index.cshtml.g.cs

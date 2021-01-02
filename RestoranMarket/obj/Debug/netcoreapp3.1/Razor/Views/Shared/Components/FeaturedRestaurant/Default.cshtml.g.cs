@@ -61,8 +61,15 @@ using RestoranMarket.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"708c54c5033adea348728c047fa18104e8c392a3", @"/Views/Shared/Components/FeaturedRestaurant/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9179da62a340fd73c4e5647a03d1e62975640805", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b50886a24672e34e26feb14e82ef0a033d1a89ae", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_FeaturedRestaurant_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Restaurant>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString(""), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -119,8 +126,8 @@ using RestoranMarket.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("                    <!-- Single -->\r\n                    <div class=\"properties pb-20\">\r\n                        <div class=\"properties__card\">\r\n                            <div class=\"properties__img overlay1\">\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "708c54c5033adea348728c047fa18104e8c392a36969", async() => {
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "708c54c5033adea348728c047fa18104e8c392a37185", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "708c54c5033adea348728c047fa18104e8c392a37166", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "708c54c5033adea348728c047fa18104e8c392a37382", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -174,7 +181,7 @@ AddHtmlAttributeValue("", 945, restaurant.Image, 945, 17, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                <div class=\"icon\">\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "708c54c5033adea348728c047fa18104e8c392a311098", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "708c54c5033adea348728c047fa18104e8c392a311295", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -189,7 +196,7 @@ AddHtmlAttributeValue("", 945, restaurant.Image, 945, 17, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"properties__caption\">\r\n                                <h3>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "708c54c5033adea348728c047fa18104e8c392a312396", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "708c54c5033adea348728c047fa18104e8c392a312593", async() => {
 #nullable restore
 #line 28 "C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\Views\Shared\Components\FeaturedRestaurant\Default.cshtml"
                                                                                                                            Write(restaurant.RestaurantName);

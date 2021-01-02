@@ -61,8 +61,15 @@ using RestoranMarket.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8c42a8bd28a46d44feea3a8f44adcd20779699e5", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9179da62a340fd73c4e5647a03d1e62975640805", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b50886a24672e34e26feb14e82ef0a033d1a89ae", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Restaurant>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -141,7 +148,7 @@ using RestoranMarket.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n                    </div>\r\n                    <!--Hero form -->\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e59993", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e510190", async() => {
                 WriteLiteral("\r\n                        <div class=\"input-form mx-5\">\r\n                            <input type=\"text\" id=\"q\" name=\"q\" class=\"p-5\"");
                 BeginWriteAttribute("placeholder", " placeholder=\"", 923, "\"", 973, 1);
 #nullable restore
@@ -169,7 +176,7 @@ WriteAttributeValue("", 937, SharedLocalizer["AramaKutusuMetni"], 937, 36, false
 #line hidden
 #nullable disable
                 WriteLiteral(":</span>\r\n                            <li>\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e511828", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e512026", async() => {
                     WriteLiteral("Türkçe");
                 }
                 );
@@ -194,7 +201,7 @@ WriteAttributeValue("", 937, SharedLocalizer["AramaKutusuMetni"], 937, 36, false
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e513925", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e514123", async() => {
                     WriteLiteral("English");
                 }
                 );
@@ -219,7 +226,7 @@ WriteAttributeValue("", 937, SharedLocalizer["AramaKutusuMetni"], 937, 36, false
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e516023", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e516221", async() => {
                     WriteLiteral("German");
                 }
                 );
@@ -244,7 +251,7 @@ WriteAttributeValue("", 937, SharedLocalizer["AramaKutusuMetni"], 937, 36, false
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e518120", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e518318", async() => {
                     WriteLiteral("French");
                 }
                 );
@@ -395,7 +402,7 @@ Write(await Component.InvokeAsync("FeaturedRestaurant"));
 #line hidden
 #nullable disable
             WriteLiteral("                        <div class=\"col-lg-6\">\r\n                            <div class=\"single-location mb-30\">\r\n                                <div class=\"location-img\">\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8c42a8bd28a46d44feea3a8f44adcd20779699e525863", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8c42a8bd28a46d44feea3a8f44adcd20779699e526061", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -427,7 +434,7 @@ AddHtmlAttributeValue("", 3812, restaurant.Image, 3812, 17, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n                                    <br />\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e527931", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c42a8bd28a46d44feea3a8f44adcd20779699e528129", async() => {
 #nullable restore
 #line 93 "C:\Users\melih\Desktop\RestoranMarket\RestoranMarket\Views\Home\Index.cshtml"
                                                                                                                                                 Write(SharedLocalizer["RestoranaGit"]);
