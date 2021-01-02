@@ -11,6 +11,14 @@
 </div>
 
 <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+@if (TempData["message"] != null)
+{
+    <div class="alert bg-success p-2">
+        @TempData["message"]
+    </div>
+}
+
 <table class="table table-bordered table-sm table-striped m-1 p-1">
     <tr>
         <th>Rol Id</th>
