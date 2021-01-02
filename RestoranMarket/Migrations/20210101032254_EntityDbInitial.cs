@@ -1,0 +1,159 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace RestoranMarket.Migrations
+{
+    public partial class EntityDbInitial : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    CategoryId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoryName = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    OrderId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Number = table.Column<string>(nullable: true),
+                    OrderDate = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.OrderId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Restaurants",
+                columns: table => new
+                {
+                    RestaurantId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RestaurantName = table.Column<string>(nullable: true),
+                    DateAdded = table.Column<DateTime>(nullable: false),
+                    Image = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    HtmlContent = table.Column<string>(nullable: true),
+                    IsHome = table.Column<bool>(nullable: false),
+                    IsApproved = table.Column<bool>(nullable: false),
+                    IsFeatured = table.Column<bool>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Restaurants", x => x.RestaurantId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Images",
+                columns: table => new
+                {
+                    ImageId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ImageName = table.Column<string>(nullable: true),
+                    RestaurantId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Images", x => x.ImageId);
+                    table.ForeignKey(
+                        name: "FK_Images_Restaurants_RestaurantId",
+                        column: x => x.RestaurantId,
+                        principalTable: "Restaurants",
+                        principalColumn: "RestaurantId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RestaurantAttributes",
+                columns: table => new
+                {
+                    RestaurantAttributeId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Attribute = table.Column<string>(nullable: true),
+                    Value = table.Column<string>(nullable: true),
+                    RestaurantId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RestaurantAttributes", x => x.RestaurantAttributeId);
+                    table.ForeignKey(
+                        name: "FK_RestaurantAttributes_Restaurants_RestaurantId",
+                        column: x => x.RestaurantId,
+                        principalTable: "Restaurants",
+                        principalColumn: "RestaurantId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RestaurantCategory",
+                columns: table => new
+                {
+                    RestaurantId = table.Column<int>(nullable: false),
+                    CategoryId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RestaurantCategory", x => new { x.RestaurantId, x.CategoryId });
+                    table.ForeignKey(
+                        name: "FK_RestaurantCategory_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_RestaurantCategory_Restaurants_RestaurantId",
+                        column: x => x.RestaurantId,
+                        principalTable: "Restaurants",
+                        principalColumn: "RestaurantId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Images_RestaurantId",
+                table: "Images",
+                column: "RestaurantId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RestaurantAttributes_RestaurantId",
+                table: "RestaurantAttributes",
+                column: "RestaurantId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RestaurantCategory_CategoryId",
+                table: "RestaurantCategory",
+                column: "CategoryId");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "Images");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "RestaurantAttributes");
+
+            migrationBuilder.DropTable(
+                name: "RestaurantCategory");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Restaurants");
+        }
+    }
+}

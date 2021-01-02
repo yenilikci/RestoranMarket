@@ -13,9 +13,16 @@ namespace RestoranMarket.Controllers
     {
         private UserManager<ApplicationUser> userManager;
 
-        public AdminController(UserManager<ApplicationUser> _userManager)
+        //update işlemi için
+        private IPasswordValidator<ApplicationUser> passwordValidator;
+        private IPasswordHasher<ApplicationUser> passwordHasher;
+
+
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher)
         {
             userManager = _userManager;
+            passwordValidator = _passwordValidator;
+            passwordHasher = _passwordHasher;
         }
 
         public IActionResult Index()
@@ -83,5 +90,65 @@ namespace RestoranMarket.Controllers
             }
             return View("Index", userManager.Users); 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+
+            if (user != null)
+            {
+                return View(user);
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(string id,string password,string email)
+        {
+            var user = await userManager.FindByIdAsync(id);
+
+            if (user != null)
+            {
+
+                user.Email = email;
+                //kullanıcı varsa güncelleme işlemi
+                IdentityResult validPass = null;
+
+                //dışarıdan gelen bir password değeri varsa
+                if (!string.IsNullOrEmpty(password))
+                {
+                    validPass = await passwordValidator.ValidateAsync(userManager,user, password);
+
+                    if (validPass.Succeeded)
+                    {
+                        //parolayı güncelle
+                        user.PasswordHash = passwordHasher.HashPassword(user, password);
+                        var result = await userManager.UpdateAsync(user);
+                        if (result.Succeeded)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item in validPass.Errors)
+                        {
+                            ModelState.AddModelError("", item.Description);
+                        }
+                    }
+                }
+            }
+            else //eğer bir kullanıcı yoksa
+            {
+                ModelState.AddModelError("", "kullanıcı bulunamadı!");
+            }
+      
+            return View(user);
+        }
+
     }
 }

@@ -15,16 +15,16 @@ namespace RestoranMarket.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
+                .HasAnnotation("ProductVersion", "3.1.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.1");
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Entity.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CategoryName")
                         .HasColumnType("nvarchar(max)");
@@ -39,7 +39,7 @@ namespace RestoranMarket.Migrations
                     b.Property<int>("ImageId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
@@ -59,7 +59,7 @@ namespace RestoranMarket.Migrations
                     b.Property<int>("OrderId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Number")
                         .HasColumnType("nvarchar(max)");
@@ -77,7 +77,7 @@ namespace RestoranMarket.Migrations
                     b.Property<int>("RestaurantId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
@@ -113,7 +113,7 @@ namespace RestoranMarket.Migrations
                     b.Property<int>("RestaurantAttributeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Attribute")
                         .HasColumnType("nvarchar(max)");
@@ -153,8 +153,6 @@ namespace RestoranMarket.Migrations
                         .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Restaurant");
                 });
 
             modelBuilder.Entity("Entity.RestaurantAttribute", b =>
@@ -164,8 +162,6 @@ namespace RestoranMarket.Migrations
                         .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Restaurant");
                 });
 
             modelBuilder.Entity("Entity.RestaurantCategory", b =>
@@ -181,24 +177,6 @@ namespace RestoranMarket.Migrations
                         .HasForeignKey("RestaurantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Restaurant");
-                });
-
-            modelBuilder.Entity("Entity.Category", b =>
-                {
-                    b.Navigation("RestaurantCategories");
-                });
-
-            modelBuilder.Entity("Entity.Restaurant", b =>
-                {
-                    b.Navigation("Attributes");
-
-                    b.Navigation("Images");
-
-                    b.Navigation("RestaurantCategories");
                 });
 #pragma warning restore 612, 618
         }
