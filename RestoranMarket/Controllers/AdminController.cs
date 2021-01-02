@@ -15,6 +15,7 @@ namespace RestoranMarket.Controllers
     {
 
         private ICategoryRepository categoryrepo;
+        private IRestaurantRepository restaurantrepo;
 
         //kullanıcı işlemleri için
         private UserManager<ApplicationUser> userManager;
@@ -24,12 +25,13 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher,ICategoryRepository _categoryrepo)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher,ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
             passwordHasher = _passwordHasher;
             categoryrepo = _categoryrepo;
+            restaurantrepo = _restaurantrepo;
         }
 
         [Authorize]
@@ -161,6 +163,12 @@ namespace RestoranMarket.Controllers
         public IActionResult CategoryList()
         {
             var model = categoryrepo.GetAll();
+            return View(model);
+        }
+
+        public IActionResult RestaurantList()
+        {
+            var model = restaurantrepo.GetAll();
             return View(model);
         }
 

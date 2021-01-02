@@ -60,7 +60,7 @@
                 @if (User.IsInRole("Admin"))
                 {
                     <li>
-                        <a href="index.html">
+                        <a asp-controller="Admin" asp-action="RestaurantList">
                             <span><i class="zmdi zmdi-coffee"></i>Restoranlar</span>
                         </a>
                     </li>

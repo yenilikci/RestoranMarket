@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Restaurant>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+
+<div class="card">
+    <div class="card-header">Kategoriler</div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>RESTORAN RESMİ</th>
+                    <th>RESTORAN ID</th>
+                    <th>RESTORAN ADI</th>
+                    <th>ONAY</th>
+                    <th>ÖNE ÇIKAN ONAY</th>
+                    <th>ANASAYFA ONAY</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        <img src="~/app/thumb/@item.Image" width="60"/>
+                    </td>
+                    <td>
+                        @item.RestaurantId
+                    </td>
+                    <td>
+                        @item.RestaurantName
+                    </td>
+                    <td>
+                        @if (item.IsApproved)
+                        {
+                            <i class="zmdi zmdi-check-circle"></i>
+                        }
+                        else
+                        {
+                            <i class="zmdi zmdi-close-circle-o"></i>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsFeatured)
+                        {
+                            <i class="zmdi zmdi-check-circle"></i>
+                        }
+                        else
+                        {
+                            <i class="zmdi zmdi-close-circle-o"></i>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsHome)
+                        {
+                            <i class="zmdi zmdi-check-circle"></i>
+                        }
+                        else
+                        {
+                            <i class="zmdi zmdi-close-circle-o"></i>
+                        }
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
