@@ -36,7 +36,6 @@ namespace Repository
 
         public void Dispose()
         {
-            context.SaveChanges();
         }
 
         public int SaveChanges()

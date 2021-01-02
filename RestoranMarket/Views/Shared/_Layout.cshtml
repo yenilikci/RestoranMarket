@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<!doctype html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
@@ -53,28 +54,34 @@
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a asp-controller="Home" asp-action="Index">@SharedLocalizer["Anasayfa"]</a></li>
-                                    <li><a href="/Home/Index#Kategoriler">@SharedLocalizer["Kategori"]</a></li>
-                                    <li><a href="#Hakkinda">@SharedLocalizer["Hakkinda"]</a></li>
+                                    <li><a asp-controller="Home" asp-action="Index">@localizer["Anasayfa"]</a></li>
+                                    <li><a href="/Home/Index#Kategoriler">@localizer["Kategori"]</a></li>
+                                    <li><a href="#Hakkinda">@localizer["Hakkinda"]</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <!-- Header-btn -->
                         @if (User.Identity.IsAuthenticated)
                         {
+                            <li class="dropdown">
+                                 <partial name="_Culture" />
+                            </li>
                             <li>
-                                <a asp-controller="Account" asp-action="Logout">@User.Identity.Name Oturumunu Kapat</a>>
+                                <a asp-controller="Account" asp-action="Logout">@User.Identity.Name @localizer["OturumunuKapat"]</a>>
                             </li>
                             <li>
                                 <a asp-controller="Admin" asp-action="Index">
-                                    Panele Git
+                                    @localizer["PaneleGit"]
                                 </a>
                             </li>
                         }
                         else
                         {
+                            <li class="dropdown">
+                                 <partial name="_Culture" />
+                            </li>
                             <div class="header-btns d-none d-lg-block f-right">
-                                <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>@SharedLocalizer["KayitGiris"]</a>
+                                <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>Kayıt/Giriş</a>
                             </div>
                         }
                         <!-- Mobile Menu -->
@@ -89,7 +96,7 @@
     </header>
     <main>
 
-                @RenderBody()
+        @RenderBody()
 
 
     </main>
@@ -103,7 +110,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-7 col-lg-9 col-md-8">
                         <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>@SharedLocalizer["Hakkinda"]</h2>
+                            <h2>@localizer["Hakkinda"]</h2>
                         </div>
                     </div>
                 </div>
@@ -121,8 +128,8 @@
                             <span>01</span>
                         </div>
                         <div class="services-cap">
-                            <h5>@SharedLocalizer["Ozellik1Baslik"]</h5>
-                            <p>@SharedLocalizer["Ozellik1Aciklama"]</p>
+                            <h5>@localizer["Ozellik1Baslik"]</h5>
+                            <p>@localizer["Ozellik1Aciklama"]</p>
                         </div>
                     </div>
                 </div>
@@ -132,8 +139,8 @@
                             <span>02</span>
                         </div>
                         <div class="services-cap">
-                            <h5>@SharedLocalizer["Ozellik2Baslik"]</h5>
-                            <p>@SharedLocalizer["Ozellik2Aciklama"]</p>
+                            <h5>@localizer["Ozellik2Baslik"]</h5>
+                            <p>@localizer["Ozellik2Aciklama"]</p>
                         </div>
                     </div>
                 </div>
@@ -143,8 +150,8 @@
                             <span>03</span>
                         </div>
                         <div class="services-cap">
-                            <h5>@SharedLocalizer["Ozellik3Baslik"]</h5>
-                            <p>@SharedLocalizer["Ozellik3Aciklama"]</p>
+                            <h5>@localizer["Ozellik3Baslik"]</h5>
+                            <p>@localizer["Ozellik3Aciklama"]</p>
                         </div>
                     </div>
                 </div>

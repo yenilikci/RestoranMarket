@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Repository;
 using RestoranMarket.Identity;
 using System;
@@ -54,13 +55,28 @@ namespace RestoranMarket
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
-            //lokalleþtirme için
-            services.AddLocalization(options => options.ResourcesPath = "");
+
+            //lokalleþtirme ve globalleþtirme
+            services.AddLocalization(options => { options.ResourcesPath = "Resources"; });
+
+            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix,
+                options => { options.ResourcesPath = "Resources"; }).AddDataAnnotationsLocalization();
+
+            services.Configure<RequestLocalizationOptions>(
+                options => {
+                    var supportedCulteres = new List<CultureInfo>
+                {
+                    new CultureInfo("tr"),
+                    new CultureInfo("en"),
+                    new CultureInfo("de")
+                };
+                    options.DefaultRequestCulture = new RequestCulture("tr");
+                    options.SupportedCultures = supportedCulteres;
+                    options.SupportedUICultures = supportedCulteres;
+                });
 
             //default
-            services.AddControllersWithViews()
-                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-                .AddDataAnnotationsLocalization();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,21 +93,6 @@ namespace RestoranMarket
                 app.UseHsts();
             }
 
-            var supportedCultures = new[]
-            {
-                new CultureInfo("tr-TR"),
-                new CultureInfo("en-US"),
-                new CultureInfo("fr-FR"),
-                new CultureInfo("de-DE"),
-            };
-
-            app.UseRequestLocalization(new RequestLocalizationOptions
-            {
-                DefaultRequestCulture = new RequestCulture("tr-TR"),
-                SupportedCultures = supportedCultures,
-                SupportedUICultures = supportedCultures
-            });
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -99,6 +100,8 @@ namespace RestoranMarket
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
             app.UseEndpoints(endpoints =>
             {

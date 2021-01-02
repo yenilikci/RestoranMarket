@@ -1,4 +1,6 @@
 ﻿using Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
@@ -15,13 +17,19 @@ namespace RestoranMarket.Controllers
     public class HomeController : Controller
     {
         public IUnitOfWork uow;
-        protected readonly IStringLocalizer<SharedResource> sharedResource;
 
-        public HomeController(IUnitOfWork _uow, IStringLocalizer<SharedResource> _sharedResource)
+        public HomeController(IUnitOfWork _uow)
         {
             uow = _uow;
-            sharedResource = _sharedResource;
         }
+
+        public IActionResult CultureManagement(string culture, string returnUrl)
+        {
+            Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName, CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.Now.AddDays(30) });
+            return LocalRedirect(returnUrl);
+        }
+
 
         public IActionResult Index(string q)
         {
