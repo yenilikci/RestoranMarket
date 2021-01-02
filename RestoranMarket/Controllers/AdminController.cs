@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestoranMarket.Identity;
 using RestoranMarket.Models;
@@ -25,6 +26,7 @@ namespace RestoranMarket.Controllers
             passwordHasher = _passwordHasher;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View(userManager.Users);

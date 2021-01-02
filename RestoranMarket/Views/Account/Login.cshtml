@@ -1,4 +1,5 @@
-﻿<!--? Hero Area Start-->
+﻿@model LoginModel
+
 <div class="slider-area hero-bg3 hero-overly">
     <div class="single-slider slider-height2 d-flex align-items-end">
         <div class="container">
@@ -30,29 +31,21 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <hr />
-                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                    <div class="row">
+                <div class="text-danger" asp-validation-summary="All"></div>
 
-                        <div class="col-sm-12">
-                            <h3>Mail Adresi:</h3>
-                            <div class="form-group border">
-                                <input class="form-control valid" type="email" placeholder="Mail Adresinizi Giriniz">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <h3>Şifre:</h3>
-                            <div class="form-group border">
-                                <input class="form-control valid" type="password" placeholder="Şifrenizi Giriniz">
-                            </div>
-                        </div>
 
+                <form asp-action="Login" method="post">
+                    <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input class="form-control" asp-for="Email" placeholder="Mail adresinizi giriniz">
                     </div>
-                    <div class="form-group d-flex justify-content-sm-around align-items-center mt-3">
-                        <button type="submit" class="mx-1 button button-contactForm boxed-btn">KAYIT OL</button>
-                        <button type="submit" class="mx-1 button button-contactForm boxed-btn">GİRİŞ YAP</button>
-
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input class="form-control" asp-for="Password" placeholder="Şifrenizi giriniz">
                     </div>
-                </form>
+                    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+               </form>
             </div>
             <div class="col-lg-3"></div>
         </div>
