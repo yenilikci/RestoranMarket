@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestoranMarket.Identity;
@@ -12,6 +13,10 @@ namespace RestoranMarket.Controllers
 {
     public class AdminController : Controller
     {
+
+        private ICategoryRepository categoryrepo;
+
+        //kullanıcı işlemleri için
         private UserManager<ApplicationUser> userManager;
 
         //update işlemi için
@@ -19,11 +24,12 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher,ICategoryRepository _categoryrepo)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
             passwordHasher = _passwordHasher;
+            categoryrepo = _categoryrepo;
         }
 
         [Authorize]
@@ -150,6 +156,12 @@ namespace RestoranMarket.Controllers
             }
       
             return View(user);
+        }
+
+        public IActionResult CategoryList()
+        {
+            var model = categoryrepo.GetAll();
+            return View(model);
         }
 
     }

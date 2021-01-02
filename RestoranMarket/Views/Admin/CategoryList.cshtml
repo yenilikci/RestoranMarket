@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Category>
+
+@{ 
+    Layout = "_AdminLayout";
+}
+
+
+<div class="card">
+    <div class="card-header">Kategoriler</div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>KATEGORİ ID</th>
+                    <th>KATEGORİ ADI</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.CategoryId
+                        </td>
+                        <td>
+                            @item.CategoryName
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
