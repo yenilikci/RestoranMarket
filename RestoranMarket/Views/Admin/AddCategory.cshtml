@@ -1,0 +1,16 @@
+﻿@model Category
+
+@{ 
+    Layout = "_AdminLayout";
+}
+
+<form asp-controller="Admin" asp-action="AddCategory" method="post">
+    @Html.AntiForgeryToken()
+    <div class="alert alert-danger" asp-validation-summary="All">
+        <div class="form-group">
+            <label>KATEGORİ ADI GİRİNİZ</label>
+            <input asp-for="CategoryName" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Ekle</button>
+    </div>
+</form>

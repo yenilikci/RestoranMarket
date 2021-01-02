@@ -1,4 +1,5 @@
 ﻿using Data;
+using Entity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -170,6 +171,24 @@ namespace RestoranMarket.Controllers
         {
             var model = restaurantrepo.GetAll();
             return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult AddCategory()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddCategory(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                categoryrepo.Add(category);
+                categoryrepo.Save();
+                return RedirectToAction("CategoryList");
+            }
+            return View(category);
         }
 
     }
