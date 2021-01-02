@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using RestoranMarket.Identity;
 using RestoranMarket.Models;
 using System;
@@ -29,7 +30,7 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator,IPasswordHasher<ApplicationUser> _passwordHasher,ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
@@ -81,7 +82,7 @@ namespace RestoranMarket.Controllers
         public async Task<IActionResult> Delete(string id)
         {
             var user = await userManager.FindByIdAsync(id);
-            
+
             if (user != null)
             {
                 var result = await userManager.DeleteAsync(user);
@@ -102,7 +103,7 @@ namespace RestoranMarket.Controllers
             {
                 ModelState.AddModelError("", "kullanıcı bulunamadı!");
             }
-            return View("Index", userManager.Users); 
+            return View("Index", userManager.Users);
         }
 
         [HttpGet]
@@ -121,7 +122,7 @@ namespace RestoranMarket.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(string id,string password,string email)
+        public async Task<IActionResult> Update(string id, string password, string email)
         {
             var user = await userManager.FindByIdAsync(id);
 
@@ -135,7 +136,7 @@ namespace RestoranMarket.Controllers
                 //dışarıdan gelen bir password değeri varsa
                 if (!string.IsNullOrEmpty(password))
                 {
-                    validPass = await passwordValidator.ValidateAsync(userManager,user, password);
+                    validPass = await passwordValidator.ValidateAsync(userManager, user, password);
 
                     if (validPass.Succeeded)
                     {
@@ -160,7 +161,7 @@ namespace RestoranMarket.Controllers
             {
                 ModelState.AddModelError("", "kullanıcı bulunamadı!");
             }
-      
+
             return View(user);
         }
 
@@ -202,14 +203,14 @@ namespace RestoranMarket.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddRestaurant(Restaurant restaurant,IFormFile file)
+        public async Task<IActionResult> AddRestaurant(Restaurant restaurant, IFormFile file)
         {
             if (ModelState.IsValid)
             {
                 if (file != null)
                 {
                     var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\app\\thumb", file.FileName);
-                    using (var stream = new FileStream(path,FileMode.Create))
+                    using (var stream = new FileStream(path, FileMode.Create))
                     {
                         await file.CopyToAsync(stream);
 
@@ -223,6 +224,42 @@ namespace RestoranMarket.Controllers
                 return RedirectToAction("RestaurantList");
             }
             return View(restaurant);
+        }
+
+        [HttpGet]
+        public IActionResult EditCategory(int id)
+        {
+            var entity = categoryrepo.GetAll()
+                .Include(i => i.RestaurantCategories)
+                .ThenInclude(i => i.Restaurant)
+                .Where(i => i.CategoryId == id)
+                .Select(i => new AdminEditCategoryModel()
+                {
+                    CategoryId = i.CategoryId,
+                    CategoryName = i.CategoryName,
+                    Restaurants = i.RestaurantCategories.Select(a => new AdminEditCategoryRestaurant()
+                    {
+                        ResaurantId = a.RestaurantId,
+                        RestaurantName = a.Restaurant.RestaurantName,
+                        Image = a.Restaurant.Image,
+                        IsApproved = a.Restaurant.IsApproved,
+                        IsFeatured = a.Restaurant.IsFeatured,
+                        IsHome = a.Restaurant.IsHome
+                    }).ToList()
+                }).FirstOrDefault();
+            return View(entity);
+        }
+
+        [HttpPost]
+        public IActionResult EditCategory(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                categoryrepo.Edit(category);
+                categoryrepo.Save();
+                return RedirectToAction("CategoryList");
+            }
+            return View();
         }
 
     }

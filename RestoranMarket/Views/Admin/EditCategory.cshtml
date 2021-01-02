@@ -1,0 +1,92 @@
+﻿@model AdminEditCategoryModel
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="card">
+    <div class="card-header">
+        Kategori Düzenle
+    </div>
+
+    <form asp-controller="Admin" asp-action="EditCategory" method="post">
+        <div class="card-body">
+            @Html.AntiForgeryToken()
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
+            <div class="form-group">
+                <label asp-for="CategoryName">KATEGORİ ADI:</label>
+                <input asp-for="CategoryName" class="form-control" />
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">
+                Kaydet
+            </button>
+        </div>
+    </form>
+</div>
+<hr />
+
+<div class="card">
+    <div class="card-header">Restoranlar</div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>RESTORAN RESMİ</th>
+                    <th>RESTORAN ID</th>
+                    <th>RESTORAN ADI</th>
+                    <th>ONAY</th>
+                    <th>ÖNE ÇIKAN ONAY</th>
+                    <th>ANASAYFA ONAY</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Restaurants)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/app/thumb/@item.Image" width="60" />
+                        </td>
+                        <td>
+                            @item.ResaurantId
+                        </td>
+                        <td>
+                            @item.RestaurantName
+                        </td>
+                        <td>
+                            @if (item.IsApproved)
+                            {
+                                <i class="zmdi zmdi-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="zmdi zmdi-close-circle-o"></i>
+                            }
+                        </td>
+                        <td>
+                            @if (item.IsFeatured)
+                            {
+                                <i class="zmdi zmdi-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="zmdi zmdi-close-circle-o"></i>
+                            }
+                        </td>
+                        <td>
+                            @if (item.IsHome)
+                            {
+                                <i class="zmdi zmdi-check-circle"></i>
+                            }
+                            else
+                            {
+                                <i class="zmdi zmdi-close-circle-o"></i>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

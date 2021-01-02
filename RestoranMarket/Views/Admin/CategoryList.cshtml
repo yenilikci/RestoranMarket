@@ -13,6 +13,7 @@
                 <tr>
                     <th>KATEGORİ ID</th>
                     <th>KATEGORİ ADI</th>
+                    <th style="width:100px;"></th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,10 @@
                         </td>
                         <td>
                             @item.CategoryName
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-controller="Admin" asp-action="EditCategory" asp-route-id="@item.CategoryId">Düzenle</a>
+                            <button class="btn btn-danger btn-sm">Sil</button>
                         </td>
                     </tr>
                 }
