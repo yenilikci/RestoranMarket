@@ -32,6 +32,7 @@
             <tr>
                 <td>@user.Id</td>
                 <td>@user.Name</td>
+                <td identity-role="@user.Id"></td>
                 <td>
                     <form asp-route-id="@user.Id" asp-action="Delete" method="post">
                         <button type="submit" class="btn btn-danger">SİL</button>
