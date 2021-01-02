@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 using RestoranMarket.Identity;
 using RestoranMarket.Models;
 using System;
@@ -21,6 +22,7 @@ namespace RestoranMarket.Controllers
 
         private ICategoryRepository categoryrepo;
         private IRestaurantRepository restaurantrepo;
+        private RestaurantContext dbcontext;
 
         //kullanıcı işlemleri için
         private UserManager<ApplicationUser> userManager;
@@ -30,13 +32,14 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo, RestaurantContext _dbcontext)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
             passwordHasher = _passwordHasher;
             categoryrepo = _categoryrepo;
             restaurantrepo = _restaurantrepo;
+            dbcontext = _dbcontext;
         }
 
         [Authorize]
@@ -261,6 +264,14 @@ namespace RestoranMarket.Controllers
             }
             return View();
         }
+
+        public IActionResult DeleteRestaurant(int id)
+        {
+            restaurantrepo.Delete(restaurantrepo.Get(id));
+            restaurantrepo.Save();
+            return RedirectToAction("RestaurantList");
+        }
+
 
     }
 }

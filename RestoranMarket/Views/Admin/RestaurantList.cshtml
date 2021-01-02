@@ -17,6 +17,7 @@
                     <th>ONAY</th>
                     <th>ÖNE ÇIKAN ONAY</th>
                     <th>ANASAYFA ONAY</th>
+                    <th style="width:100px;"></th>
                 </tr>
             </thead>
             <tbody>
@@ -61,6 +62,12 @@
                         {
                             <i class="zmdi zmdi-close-circle-o"></i>
                         }
+                    </td>
+                    <td>
+                        <form asp-controller="Admin" asp-action="DeleteRestaurant" asp-route-id="@item.RestaurantId" method="post">
+                            <input type="hidden" asp-for="@item.RestaurantId" />
+                            <button class="btn btn-sm btn-danger" type="submit">SİL</button>
+                        </form>
                     </td>
                 </tr>
                 }

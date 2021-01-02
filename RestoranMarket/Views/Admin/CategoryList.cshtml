@@ -28,7 +28,7 @@
                         </td>
                         <td>
                             <a class="btn btn-primary btn-sm" asp-controller="Admin" asp-action="EditCategory" asp-route-id="@item.CategoryId">Düzenle</a>
-                            <button class="btn btn-danger btn-sm">Sil</button>
+                            <a class="btn btn-danger btn-sm" asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@item.CategoryId">Sil</a>    
                         </td>
                     </tr>
                 }
