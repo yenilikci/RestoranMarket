@@ -58,11 +58,25 @@
                                     <li><a href="#Hakkinda">@SharedLocalizer["Hakkinda"]</a></li>
                                 </ul>
                             </nav>
-                        </div>                    
-                        <!-- Header-btn -->
-                        <div class="header-btns d-none d-lg-block f-right">
-                            <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>@SharedLocalizer["KayitGiris"]</a>
                         </div>
+                        <!-- Header-btn -->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a asp-controller="Account" asp-action="Logout">@User.Identity.Name Oturumunu Kapat</a>>
+                            </li>
+                            <li>
+                                <a asp-controller="Admin" asp-action="Index">
+                                    Panele Git
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <div class="header-btns d-none d-lg-block f-right">
+                                <a asp-controller="Account" asp-action="Login" class="btn"><i class="ti-user"></i>@SharedLocalizer["KayitGiris"]</a>
+                            </div>
+                        }
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>

@@ -12,7 +12,7 @@ namespace RestoranMarket.Models
         public string UserName { get; set; }
         [Required]
         public string Password { get; set; }
-        [Required]
+        [Required][EmailAddress]
         public string Email { get; set; }
 
     }

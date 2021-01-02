@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestoranMarket.Identity;
 using RestoranMarket.Models;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace RestoranMarket.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminRoleController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
