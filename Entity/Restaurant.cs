@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Entity
@@ -7,6 +8,7 @@ namespace Entity
     public class Restaurant
     {
         public int RestaurantId { get; set; }
+        [Required]
         public string RestaurantName { get; set; }
         public DateTime DateAdded { get; set; }
         public string Image { get; set; }

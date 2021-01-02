@@ -1,12 +1,15 @@
 ﻿using Data;
 using Entity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using RestoranMarket.Identity;
 using RestoranMarket.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -189,6 +192,37 @@ namespace RestoranMarket.Controllers
                 return RedirectToAction("CategoryList");
             }
             return View(category);
+        }
+
+        [HttpGet]
+        public IActionResult AddRestaurant()
+        {
+            ViewBag.Categories = new SelectList(categoryrepo.GetAll(), "CategoryId", "CategoryName");
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddRestaurant(Restaurant restaurant,IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file != null)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\app\\thumb", file.FileName);
+                    using (var stream = new FileStream(path,FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+
+                        restaurant.Image = file.FileName;
+                    }
+                }
+                restaurant.DateAdded = DateTime.Now;
+                ViewBag.Categories = new SelectList(categoryrepo.GetAll(), "CategoryId", "CategoryName");
+                restaurantrepo.Add(restaurant);
+                restaurantrepo.Save();
+                return RedirectToAction("RestaurantList");
+            }
+            return View(restaurant);
         }
 
     }

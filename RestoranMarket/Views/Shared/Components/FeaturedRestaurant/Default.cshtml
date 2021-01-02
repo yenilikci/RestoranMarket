@@ -26,16 +26,19 @@
                             </div>
                             <div class="properties__caption">
                                 <h3><a asp-controller="Restaurant" asp-action="Details" asp-route-id="@restaurant.RestaurantId">@restaurant.RestaurantName</a></h3>
-                                
-                                @if (restaurant.Description.Length < 100)
+
+                                @if (!string.IsNullOrEmpty(restaurant.Description))
+                                {
+                                    @if (restaurant.Description.Length < 100)
                                     {
-                                    <p>@restaurant.Description</p>
-                                     }
-                                else
-                                    {
-                                    <p>@restaurant.Description.Substring(0, 100)...</p>
+                                        <p>@restaurant.Description</p>
                                     }
-                                </div>
+                                    else
+                                    {
+                                        <p>@restaurant.Description.Substring(0, 100)...</p>
+                                    }
+                                }
+                            </div>
                         </div>
                     </div>
                 }
