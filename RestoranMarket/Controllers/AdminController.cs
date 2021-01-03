@@ -23,6 +23,7 @@ namespace RestoranMarket.Controllers
 
         private ICategoryRepository categoryrepo;
         private IRestaurantRepository restaurantrepo;
+        private RestaurantContext context;
 
         //kullanıcı işlemleri için
         private UserManager<ApplicationUser> userManager;
@@ -32,13 +33,14 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo, RestaurantContext _context)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
             passwordHasher = _passwordHasher;
             categoryrepo = _categoryrepo;
             restaurantrepo = _restaurantrepo;
+            context = _context;
         }
 
         public IActionResult Index()
@@ -52,6 +54,7 @@ namespace RestoranMarket.Controllers
             return View();
         }
 
+        [Authorize(Roles ="Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(RegisterModel model)
         {
@@ -79,6 +82,7 @@ namespace RestoranMarket.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Delete(string id)
         {
@@ -107,6 +111,7 @@ namespace RestoranMarket.Controllers
             return View("Index", userManager.Users);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Update(string id)
         {
@@ -122,6 +127,7 @@ namespace RestoranMarket.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Update(string id, string password, string email)
         {
@@ -166,6 +172,7 @@ namespace RestoranMarket.Controllers
             return View(user);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult CategoryList()
         {
             var model = categoryrepo.GetAll();
@@ -179,12 +186,14 @@ namespace RestoranMarket.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult AddCategory()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult AddCategory(Category category)
         {
@@ -197,6 +206,7 @@ namespace RestoranMarket.Controllers
             return View(category);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult EditCategory(int id)
         {
@@ -221,6 +231,7 @@ namespace RestoranMarket.Controllers
             return View(entity);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult EditCategory(Category category)
         {
@@ -233,6 +244,7 @@ namespace RestoranMarket.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteRestaurant(int id)
         {
             restaurantrepo.Delete(restaurantrepo.Get(id));
@@ -240,6 +252,7 @@ namespace RestoranMarket.Controllers
             return RedirectToAction("RestaurantList");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteCategory(int id)
         {
             categoryrepo.Delete(categoryrepo.Get(id));
@@ -247,12 +260,14 @@ namespace RestoranMarket.Controllers
             return RedirectToAction("CategoryList");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult AddRestaurant()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> AddRestaurant(Restaurant restaurant, IFormFile file)
         {
@@ -276,12 +291,14 @@ namespace RestoranMarket.Controllers
             return View(restaurant);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult EditRestaurant(int id) 
         {
             return View(restaurantrepo.Get(id));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> EditRestaurant(Restaurant restaurant, IFormFile file)
         {
@@ -306,5 +323,20 @@ namespace RestoranMarket.Controllers
 
         }
 
+        [Authorize(Roles = "Admin")]
+        [HttpGet]
+        public IActionResult AddAttribute()
+        {
+            return View();
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult AddAttribute(RestaurantAttribute entity)
+        {
+            context.RestaurantAttributes.Add(entity);
+            context.SaveChanges();
+            return View();
+        }
     }
 }

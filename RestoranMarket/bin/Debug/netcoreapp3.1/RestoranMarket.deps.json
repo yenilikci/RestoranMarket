@@ -304,6 +304,15 @@
           "RestoranMarket.dll": {}
         },
         "resources": {
+          "de/RestoranMarket.resources.dll": {
+            "locale": "de"
+          },
+          "en/RestoranMarket.resources.dll": {
+            "locale": "en"
+          },
+          "tr/RestoranMarket.resources.dll": {
+            "locale": "tr"
+          },
           "de-DE/RestoranMarket.resources.dll": {
             "locale": "de-DE"
           },

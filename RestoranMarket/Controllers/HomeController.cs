@@ -47,6 +47,8 @@ namespace RestoranMarket.Controllers
                 TempData["Tümü"] = "Tüm Restoranlar:";
             }
 
+            
+
             return View(query.OrderByDescending(i => i.DateAdded));
         }
 

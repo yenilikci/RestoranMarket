@@ -22,3 +22,15 @@ C:\Users\melih\Desktop\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csproj.C
 C:\Users\melih\Desktop\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
 C:\Users\melih\Desktop\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\melih\Desktop\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.pdb

@@ -12,7 +12,9 @@ namespace Entity
         public string RestaurantName { get; set; }
         public DateTime DateAdded { get; set; }
         public string Image { get; set; }
+        [Required]
         public string Description { get; set; }
+        [Required]
         public string HtmlContent { get; set; }
         public bool IsHome { get; set; }
         public bool IsApproved { get; set; }

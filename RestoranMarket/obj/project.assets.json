@@ -6015,11 +6015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\RestoranMarket\\RestoranMarket.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\RestoranMarket.csproj",
       "projectName": "RestoranMarket",
-      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\RestoranMarket\\RestoranMarket.csproj",
+      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\RestoranMarket.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\RestoranMarket\\obj\\",
+      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6036,14 +6036,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Data\\Data.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Data\\Data.csproj"
             },
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Entity\\Entity.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Entity\\Entity.csproj"
             },
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\45- Restoran Düzenleme Eklendi, EditRestaurant Action Yazıldı\\Repository\\Repository.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Repository\\Repository.csproj"
             }
           }
         }

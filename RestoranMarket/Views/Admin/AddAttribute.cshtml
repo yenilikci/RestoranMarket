@@ -1,0 +1,31 @@
+﻿@model RestaurantAttribute
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="bg-primary text-white p-1 m-1">
+    <h2 class="p-2"><i class="zmdi zmdi-plus-circle-o"></i> Özellik Ekle</h2>
+</div>
+
+
+<form asp-controller="Admin" asp-action="AddAttribute" method="post" class="mb-3">
+    @Html.AntiForgeryToken()
+    <div class="alert alert-danger" asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label>Restoran Id</label>
+        <input asp-for="RestaurantId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Özellik Adı Giriniz</label>
+        <input asp-for="Attribute" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Özellik Değeri Giriniz</label>
+        <input asp-for="Value" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Ekle</button>
+</form>
