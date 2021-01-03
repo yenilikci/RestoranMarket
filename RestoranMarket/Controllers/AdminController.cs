@@ -17,12 +17,12 @@ using System.Threading.Tasks;
 
 namespace RestoranMarket.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
 
         private ICategoryRepository categoryrepo;
         private IRestaurantRepository restaurantrepo;
-        private RestaurantContext dbcontext;
 
         //kullanıcı işlemleri için
         private UserManager<ApplicationUser> userManager;
@@ -32,17 +32,15 @@ namespace RestoranMarket.Controllers
         private IPasswordHasher<ApplicationUser> passwordHasher;
 
 
-        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo, RestaurantContext _dbcontext)
+        public AdminController(UserManager<ApplicationUser> _userManager, IPasswordValidator<ApplicationUser> _passwordValidator, IPasswordHasher<ApplicationUser> _passwordHasher, ICategoryRepository _categoryrepo, IRestaurantRepository _restaurantrepo)
         {
             userManager = _userManager;
             passwordValidator = _passwordValidator;
             passwordHasher = _passwordHasher;
             categoryrepo = _categoryrepo;
             restaurantrepo = _restaurantrepo;
-            dbcontext = _dbcontext;
         }
 
-        [Authorize]
         public IActionResult Index()
         {
             return View(userManager.Users);
@@ -174,6 +172,7 @@ namespace RestoranMarket.Controllers
             return View(model);
         }
 
+        [Authorize(Roles ="Admin")]
         public IActionResult RestaurantList()
         {
             var model = restaurantrepo.GetAll();
@@ -196,37 +195,6 @@ namespace RestoranMarket.Controllers
                 return RedirectToAction("CategoryList");
             }
             return View(category);
-        }
-
-        [HttpGet]
-        public IActionResult AddRestaurant()
-        {
-            ViewBag.Categories = new SelectList(categoryrepo.GetAll(), "CategoryId", "CategoryName");
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddRestaurant(Restaurant restaurant, IFormFile file)
-        {
-            if (ModelState.IsValid)
-            {
-                if (file != null)
-                {
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\app\\thumb", file.FileName);
-                    using (var stream = new FileStream(path, FileMode.Create))
-                    {
-                        await file.CopyToAsync(stream);
-
-                        restaurant.Image = file.FileName;
-                    }
-                }
-                restaurant.DateAdded = DateTime.Now;
-                ViewBag.Categories = new SelectList(categoryrepo.GetAll(), "CategoryId", "CategoryName");
-                restaurantrepo.Add(restaurant);
-                restaurantrepo.Save();
-                return RedirectToAction("RestaurantList");
-            }
-            return View(restaurant);
         }
 
         [HttpGet]
@@ -272,6 +240,71 @@ namespace RestoranMarket.Controllers
             return RedirectToAction("RestaurantList");
         }
 
+        public IActionResult DeleteCategory(int id)
+        {
+            categoryrepo.Delete(categoryrepo.Get(id));
+            categoryrepo.Save();
+            return RedirectToAction("CategoryList");
+        }
+
+        [HttpGet]
+        public IActionResult AddRestaurant()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddRestaurant(Restaurant restaurant, IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file != null)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\app\\thumb", file.FileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+
+                        restaurant.Image = file.FileName;
+                    }
+                }
+                restaurant.DateAdded = DateTime.Now;
+                restaurantrepo.Add(restaurant);
+                restaurantrepo.Save();
+                return RedirectToAction();
+            }
+            return View(restaurant);
+        }
+
+        [HttpGet]
+        public IActionResult EditRestaurant(int id) 
+        {
+            return View(restaurantrepo.Get(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditRestaurant(Restaurant restaurant, IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+                if (file != null)
+                {
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\app\\thumb", file.FileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+
+                        restaurant.Image = file.FileName;
+                    }
+                }
+
+                restaurantrepo.Edit(restaurant);
+                restaurantrepo.Save();
+                return RedirectToAction("RestaurantList");
+            }
+            return View(restaurant);
+
+        }
 
     }
 }

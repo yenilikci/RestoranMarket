@@ -4,7 +4,6 @@
     Layout = "_AdminLayout";
 }
 
-
 <div class="card">
     <div class="card-header">Restoranlar</div>
     <div class="card-body">
@@ -68,6 +67,7 @@
                             <input type="hidden" asp-for="@item.RestaurantId" />
                             <button class="btn btn-sm btn-danger" type="submit">SİL</button>
                         </form>
+                        <a class="btn btn-sm btn-primary" asp-controller="Admin" asp-action="EditRestaurant" asp-route-id="@item.RestaurantId">Düzenle</a>
                     </td>
                 </tr>
                 }

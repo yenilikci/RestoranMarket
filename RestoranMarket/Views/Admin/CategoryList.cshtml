@@ -13,7 +13,7 @@
                 <tr>
                     <th>KATEGORİ ID</th>
                     <th>KATEGORİ ADI</th>
-                    <th style="width:100px;"></th>
+                    <th style="width:150px;"></th>
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +28,10 @@
                         </td>
                         <td>
                             <a class="btn btn-primary btn-sm" asp-controller="Admin" asp-action="EditCategory" asp-route-id="@item.CategoryId">Düzenle</a>
-                            <a class="btn btn-danger btn-sm" asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@item.CategoryId">Sil</a>    
+                            <form asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@item.CategoryId" method="post">
+                                <input type="hidden" asp-for="@item.CategoryId" />
+                                <button class="btn btn-sm btn-danger" type="submit">SİL</button>
+                            </form>
                         </td>
                     </tr>
                 }

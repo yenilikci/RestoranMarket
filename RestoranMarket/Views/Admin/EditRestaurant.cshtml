@@ -1,0 +1,64 @@
+﻿@model Restaurant
+
+@{
+    Layout = "_AdminLayout";
+}
+
+
+<div class="bg-primary text-white p-1 m-1">
+    <h2 class="p-2"> Restoran Düzenle</h2>
+</div>
+
+<form asp-controller="Admin" asp-action="EditRestaurant" method="post" enctype="multipart/form-data" class="mb-3">
+
+    <div class="alert alert-danger" asp-validation-summary="All"></div>
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="@Model.RestaurantId" />
+    <input type="hidden" asp-for="@Model.Image" />
+
+    <div class="form-group">
+        <label>RESTORAN ADI</label>
+        <input asp-for="RestaurantName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description">RESTORAN KISA BİLGİ:</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HtmlContent">RESTORAN AYRINTILARI:</label>
+        <textarea asp-for="HtmlContent" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>RESTORAN RESMİ</label>
+        <img src="~/app/thumb/@Model.Image" width="120" />
+        <input type="file" name="file" id="file" class="form-control" />
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsFeatured" class="form-check-input" />
+            ÖNE ÇIKAN ONAY
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsApproved" class="form-check-input" />
+            ONAY
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsHome" class="form-check-input" />
+            ANASAYFA ONAY
+        </label>
+    </div>
+
+    <input type="submit" class="btn btn-success" value="Kaydet" />
+
+</form>
