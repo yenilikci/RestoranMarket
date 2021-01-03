@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj": {}
+    "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj": {
+    "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\obj\\",
+        "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Berke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Berke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,10 +30,9 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
               }
             }
           }
@@ -42,7 +45,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -58,22 +60,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj": {
+    "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Berke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Berke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -84,7 +90,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -96,7 +101,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -112,22 +116,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj": {
+    "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Berke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Berke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -138,13 +146,12 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj"
               },
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
               }
             }
           }
@@ -157,7 +164,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
@@ -183,22 +189,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj": {
+    "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj",
+        "projectUniqueName": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
         "projectName": "RestoranMarket",
-        "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj",
-        "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\obj\\",
+        "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\RestoranMarket\\RestoranMarket.csproj",
+        "packagesPath": "C:\\Users\\Berke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\RestoranMarket\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Berke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -209,16 +219,15 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Data\\Data.csproj"
               },
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Entity\\Entity.csproj"
               },
-              "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj"
+              "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Berke\\source\\repos\\RestoranMarket\\Repository\\Repository.csproj"
               }
             }
           }
@@ -231,7 +240,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -284,7 +292,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

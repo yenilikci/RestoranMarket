@@ -34,3 +34,15 @@ C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\ob
 C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
 C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\melih\Desktop\RestoranMarket-Commit\46- Özellik Ekleme Eklendi\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\Berke\source\repos\RestoranMarket\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\Berke\source\repos\RestoranMarket\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\Berke\source\repos\RestoranMarket\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\Berke\source\repos\RestoranMarket\Data\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Berke\source\repos\RestoranMarket\Data\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\Berke\source\repos\RestoranMarket\Data\obj\Debug\netcoreapp3.1\Data.pdb
