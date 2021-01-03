@@ -260,14 +260,12 @@ namespace RestoranMarket.Controllers
             return RedirectToAction("CategoryList");
         }
 
-        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult AddRestaurant()
         {
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> AddRestaurant(Restaurant restaurant, IFormFile file)
         {

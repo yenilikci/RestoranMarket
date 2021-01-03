@@ -11,8 +11,11 @@ namespace RestoranMarket.Models
         [Required]
         public string UserName { get; set; }
         [Required]
+        [UIHint("password")]
         public string Password { get; set; }
-        [Required][EmailAddress]
+        [Required]
+        [EmailAddress]
+        [UIHint("email")]
         public string Email { get; set; }
 
     }

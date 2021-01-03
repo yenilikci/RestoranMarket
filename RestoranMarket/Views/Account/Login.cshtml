@@ -1,4 +1,5 @@
-﻿@model LoginModel
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@model LoginModel
 
 <div class="slider-area hero-bg3 hero-overly">
     <div class="single-slider slider-height2 d-flex align-items-end">
@@ -10,7 +11,7 @@
                             <div class="col-xl-8">
                                 <div class="details-cap d-flex">
                                     <div class="properties__caption">
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -26,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="contact-title text-center">Giriş Yap</h1>
+                <h1 class="contact-title text-center">@localizer["GirisYap"]</h1>
             </div>
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
@@ -37,15 +38,15 @@
                 <form asp-action="Login" method="post">
                     <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
                     <div class="form-group">
-                        <label>Email</label>
-                        <input class="single-input-primary p-3" asp-for="Email" placeholder="Mail adresinizi giriniz">
+                        <label>@localizer["Email"]</label>
+                        <input class="single-input-primary p-3" asp-for="Email" placeholder="@localizer["MailAdresGir"]">
                     </div>
                     <div class="form-group">
-                        <label>Şifre</label>
-                        <input class="single-input-primary p-3" asp-for="Password" placeholder="Şifrenizi giriniz">
+                        <label>@localizer["Sifre"]</label>
+                        <input class="single-input-primary p-3" asp-for="Password" placeholder="@localizer["SifreGir"]">
                     </div>
-                    <button type="submit" class="btn btn-primary">Giriş Yap</button>
-                    <a class="btn btn-primary" asp-action="Register">Kayıt Ol</a>
+                    <button type="submit" class="btn btn-primary">@localizer["GirisYap"]</button>
+                    <a class="btn btn-primary" asp-action="Register">@localizer["KayitOl"]</a>
                 </form>
             </div>
             <div class="col-lg-3"></div>

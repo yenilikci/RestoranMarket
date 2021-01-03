@@ -1,18 +1,19 @@
-﻿@model IEnumerable<CategoryModel>
-   
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@model IEnumerable<CategoryModel>
 
- <aside class="single_sidebar_widget post_category_widget">
-        <h2 class="widget_title" style="color: #2d2d2d;">@SharedLocalizer["Kategori"]</h2>
-        <br />
-        <ul class="list cat-list">
-            @foreach (var category in Model)
-            {
+
+<aside class="single_sidebar_widget post_category_widget">
+    <h2 class="widget_title" style="color: #2d2d2d;">@localizer["Kategori"]</h2>
+    <br />
+    <ul class="list cat-list">
+        @foreach (var category in Model)
+        {
             <li>
                 <a asp-controller="Restaurant" asp-action="List" asp-route-category="@category.CategoryName">
-                    <p>@category.CategoryName <span class="pull-right">(@category.Count)</span></p> 
-                </a >
+                    <p>@category.CategoryName <span class="pull-right">(@category.Count)</span></p>
+                </a>
             </li>
-            }
-        </ul>
+        }
+    </ul>
 </aside>
 

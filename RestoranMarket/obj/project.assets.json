@@ -6015,11 +6015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\RestoranMarket.csproj",
+      "projectUniqueName": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj",
       "projectName": "RestoranMarket",
-      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\RestoranMarket.csproj",
+      "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\RestoranMarket.csproj",
       "packagesPath": "C:\\Users\\melih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\RestoranMarket\\obj\\",
+      "outputPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\RestoranMarket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6036,14 +6036,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Data\\Data.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Data\\Data.csproj"
             },
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Entity\\Entity.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Entity\\Entity.csproj"
             },
-            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\46- Özellik Ekleme Eklendi\\Repository\\Repository.csproj"
+            "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\melih\\Desktop\\RestoranMarket-Commit\\47- Dil Desteği Tüm Sayfalara Uygulandı\\Repository\\Repository.csproj"
             }
           }
         }

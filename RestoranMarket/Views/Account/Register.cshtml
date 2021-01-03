@@ -1,4 +1,5 @@
-﻿@model RegisterModel
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@model RegisterModel
 
 @{
     Layout = "_Layout";
@@ -31,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="contact-title text-center">Kayıt Ol</h1>
+                <h1 class="contact-title text-center">@localizer["KayitOl"]</h1>
             </div>
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
@@ -42,19 +43,19 @@
                 <form asp-action="Register" method="post">
                     <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl" />
                     <div class="form-group">
-                        <label>Email Adresi</label>
-                        <input class="single-input-primary p-3" asp-for="Email" placeholder="Email Adresiniz">
+                        <label>@localizer["EmailAdresi"]</label>
+                        <input class="single-input-primary p-3" asp-for="Email" placeholder="@localizer["EmailAdresiniz"]">
                     </div>
                     <div class="form-group">
-                        <label>Kullanıcı Adı</label>
-                        <input class="single-input-primary p-3" asp-for="UserName" placeholder="Kullanıcı Adı Belirleyiniz">
+                        <label>@localizer["KullaniciAdi"]</label>
+                        <input class="single-input-primary p-3" asp-for="UserName" placeholder="@localizer["KullaniciBelirle"]">
                     </div>
                     <div class="form-group">
-                        <label>Şifre</label>
-                        <input class="single-input-primary p-3" asp-for="Password" placeholder="Şifrenizi Belirleyiniz">
+                        <label>@localizer["Sifre"]</label>
+                        <input class="single-input-primary p-3" asp-for="Password" placeholder="@localizer["SifreBelirle"]">
                     </div>
-                    <input type="submit" class="btn btn-primary"></input>
-                    <button asp-action="Index" asp-controller="Home" class="btn btn-danger btn-lg">İptal</button>
+                    <input type="submit" class="btn btn-primary" value="@localizer["Gonder"]"></input>
+                    <button asp-action="Index" asp-controller="Home" class="btn btn-danger btn-lg">@localizer["Iptal"]</button>
 
                 </form>
             </div>
