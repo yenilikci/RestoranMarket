@@ -33,6 +33,27 @@
         <input type="file" name="file" id="file" class="form-control" />
     </div>
 
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsOtopark" class="form-check-input" />
+            Otopark var mı?
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsOpenArea" class="form-check-input" />
+            Açık alan var mı?
+        </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+            <input asp-for="IsService" class="form-check-input" />
+            Servis var mı?
+        </label>
+    </div>
+
 
     <input type="submit" class="btn btn-success" value="Ekle" />
 

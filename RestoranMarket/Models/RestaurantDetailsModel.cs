@@ -10,7 +10,7 @@ namespace RestoranMarket.Models
     {
         public Restaurant Restaurant { get; set; }
         public List<Image> Images { get; set; }
-        public List<RestaurantAttribute> RestaurantAttributes { get; set; }
+        //public List<RestaurantAttribute> RestaurantAttributes { get; set; }
         public List<Category> Categories { get; set; }
     }
 }

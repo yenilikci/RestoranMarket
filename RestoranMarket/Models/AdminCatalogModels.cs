@@ -21,6 +21,9 @@ namespace RestoranMarket.Models
         public bool IsApproved { get; set; }
         public bool IsHome { get; set; }
         public bool IsFeatured { get; set; }
+        public bool IsOtopark { get; set; }
+        public bool IsOpenArea { get; set; }
+        public bool IsService { get; set; }
 
     }
 }

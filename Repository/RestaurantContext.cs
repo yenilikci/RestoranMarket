@@ -17,7 +17,6 @@ namespace Repository
         public DbSet<Category> Categories { get; set; }
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Image> Images { get; set; }
-        public DbSet<RestaurantAttribute> RestaurantAttributes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

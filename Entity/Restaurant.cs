@@ -19,9 +19,12 @@ namespace Entity
         public bool IsHome { get; set; }
         public bool IsApproved { get; set; }
         public bool IsFeatured { get; set; }
+        public bool IsOtopark { get; set; }
+        public bool IsOpenArea { get; set; }
+        public bool IsService { get; set; }
         
         public List<RestaurantCategory> RestaurantCategories { get; set; }
         public List<Image> Images { get; set; } 
-        public List<RestaurantAttribute> Attributes { get; set; }
+        //public List<RestaurantAttribute> Attributes { get; set; }
     }
 }

@@ -48,6 +48,7 @@ namespace RestoranMarket.Controllers
             return View(userManager.Users);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult Create()
         {
@@ -328,13 +329,5 @@ namespace RestoranMarket.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public IActionResult AddAttribute(RestaurantAttribute entity)
-        {
-            context.RestaurantAttributes.Add(entity);
-            context.SaveChanges();
-            return View();
-        }
     }
 }

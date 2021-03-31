@@ -660,7 +660,6 @@ C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\AdminRole\Create.cshtml.g.cs
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\AdminRole\Edit.cshtml.g.cs
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\AdminRole\Index.cshtml.g.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddAttribute.cshtml.g.cs
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddCategory.cshtml.g.cs
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddRestaurant.cshtml.g.cs
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\Razor\Views\Admin\CategoryList.cshtml.g.cs
@@ -692,10 +691,3 @@ C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.dll
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.pdb
 C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\RestoranMarket.genruntimeconfig.cache
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\de\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\en\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\tr\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\de-DE\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\en-US\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\fr-FR\RestoranMarket.resources.cs
-C:\Users\Berke\source\repos\RestoranMarket\RestoranMarket\obj\Debug\netcoreapp3.1\tr-TR\RestoranMarket.resources.cs

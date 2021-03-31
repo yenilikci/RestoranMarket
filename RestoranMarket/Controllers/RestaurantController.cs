@@ -62,14 +62,12 @@ namespace RestoranMarket.Controllers
                 .GetAll()
                 .Where(i => i.RestaurantId == id)
                 .Include(i => i.Images)
-                .Include(i => i.Attributes)
                 .Include(i => i.RestaurantCategories)
                 .ThenInclude(i => i.Category)
                 .Select(i => new RestaurantDetailsModel()
                 {
                     Restaurant = i,
                     Images = i.Images,
-                    RestaurantAttributes = i.Attributes,
                     Categories = i.RestaurantCategories.Select(a => a.Category).ToList()
                 }).FirstOrDefault());
         }
